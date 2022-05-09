@@ -35,7 +35,6 @@ html {
   overflow-y: scroll; 
 }
 
-
 *,
 *::after,
 *::before {
@@ -43,7 +42,6 @@ html {
 }
 
 /* Align radios and text inputs with their label */
-
 input[type='radio'] { vertical-align: text-bottom; }
 
 /* Hand cursor on clickable input elements */
