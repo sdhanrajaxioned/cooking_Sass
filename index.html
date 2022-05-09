@@ -16,13 +16,13 @@
             <!--header section start-->
             <header>
 				<div class="wrapper">
-					<h1 class="logo"><a href="/" title="Cooking NYtimes Logo"><img src="https://via.placeholder.com/167x31?text=Cooking" alt="Cooking nytimes logo"></a></h1>
+					<h1 class="logo"><a href="/" title="Cooking NYTimes"><img src="https://via.placeholder.com/167x31?text=Cooking" alt="Cooking NYTimes"></a></h1>
 					<form class="search-form">
 						<div class="search-container">
 							<input type="search" name="search" id="search-field" placeholder="What would you like to cook?">
 							<span class="error-msg">error-msg</span>
 						</div>
-						<button class="search-btn">search</button>
+						<button class="search-btn">Search</button>
 					</form>
 					<nav class="navbar">
 						<ul class="nav-links">
@@ -47,14 +47,14 @@
 				<section class="banner">
 					<div class="wrapper">
 						<figure class="banner-figure">
-						<img class="banner-img" src="https://via.placeholder.com/229x155/EB4034" alt="Sausage parmesan with garlicky broccoli">
+						<img class="banner-img" src="https://via.placeholder.com/1400x484/EB4034" alt="Sausage parmesan with garlicky broccoli">
 						</figure>
 						<div class="recipe-card">
 							<div class="badge">RECIPE OF THE DAY</div>
 							<div class="recipe-card-details">
 								<div class="recipe-card-content">
 									<h2 class="recipe-card-heading">
-										<a href="#FIXME">Sausage Parmesan With Garlicky Broccoli</a>
+										<a href="#FIXME" title="Sausage Parmesan With Garlicky Broccoli">Sausage Parmesan With Garlicky Broccoli</a>
 									</h2>
 									<p class="recipe-card-subtxt">On a weeknight cook your main course and side dish at the same time.</p>
 								</div>
@@ -70,7 +70,7 @@
 							<li class="banner-social-link"><a href="#FIXME" title="Save To Recipe Box" class="bookmark-icon icons"  target="_blank">Save to Recipe Box</a></li>
 							<li class="banner-social-link"><a href="#FIXME" title="Facebook" class="fb-icon icons">Facebook</a></li>
 							<li class="banner-social-link"><a href="#FIXME" title="Twitter" class="twitter-icon icons" target="_blank">Twitter</a></li>
-							<li class="banner-social-link" title="forward" class="forward-icon icons"><a href="#FIXME">Forward</a></li>
+							<li class="banner-social-link"><a href="#FIXME" title="forward" class="forward-icon icons" target="_blank">Forward</a></li>
 						</ul>	
 					</div>
 				</section>
@@ -80,7 +80,7 @@
 				<section class="what-to-cook">
 					<div class="wrapper">
 						<h3 class="what-to-cook-heading">What to Cook This Week</h3>
-						<span class="what-to-cook-heading-subtxt">FREE RECIPES, GUIDES AND MORE FOR THE WEEK OF FEBRUARY 25TH</span>
+						<p class="what-to-cook-heading-subtxt">FREE RECIPES, GUIDES AND MORE FOR THE WEEK OF FEBRUARY 25TH</p>
 					</div>
 				</section>
 				<!--What to cook section end-->
@@ -88,8 +88,8 @@
 				<!--Sam's suggestion section start-->
 				<section class="sams-suggestion">
 					<div class="wrapper">
-						<h4 class="section-heading"> <a href="#FIXME" title="Sam's Suggestions">Sam's Suggestions</a></h4>
-						<span class="section-heading-subtxt">Recipes selected throughout the week by Sam Sifton, food editor of The New York Times.</span>
+						<h4 class="section-heading"><a href="#FIXME" title="Sam's Suggestions">Sam's Suggestions</a></h4>
+						<p class="section-heading-subtxt">Recipes selected throughout the week by Sam Sifton, food editor of The New York Times.</p>
 						<ul class="sams-recipe-cards">
 							<li class="sams-recipe-card">
 								<figure class="sams-recipe-card-figure">
@@ -157,7 +157,7 @@
 								</figure>
 								<div class="sams-recipe-card-info">
 									<div class="card-data">
-										<h5 class="recipe-name"><a href="FIXME" title="Sausage and Cabbage">Sausage and Cabbage</a></h5>
+										<h5 class="recipe-name"><a href="FIXME" title="Sausage and Cabbage" >Sausage and Cabbage</a></h5>
 										<p class="chef">By Julia Moskin</p>
 									</div>
 									<div class="card-bookmark">
@@ -179,7 +179,7 @@
 							</div>
 							<form method="GET" class="sams-newsletter-form">
 								<div class="email-container">
-									<input type="email" name="email" id="email-field">
+									<input type="email" name="email" class="email-field" id="sams-email-field">
 									<span class="error-msg"></span>
 								</div>
 								<button class="sign-up-btn">Sign Up</button>
@@ -193,7 +193,7 @@
 				<section class="popular-recipes">
 					<div class="wrapper">
 						<h4 class="section-heading"> <a href="#FIXME" title="Sam's Suggestions">More From Our Editors</a></h4>
-						<span class="section-heading-subtxt">Weeknight suppers, seasonal favorites and other ideas for this week.</span>
+						<p class="section-heading-subtxt">Weeknight suppers, seasonal favorites and other ideas for this week.</p>
 						<ul class="popular-recipe-cards">
 							<li class="popular-recipe-card">
 								<figure class="popular-recipe-card-figure">
@@ -261,7 +261,7 @@
 				<section class="cooking-guide">
 					<div class="wrapper">
 						<h4 class="section-heading"> <a href="#FIXME" title="Sam's Suggestions">Master the Basics</a></h4>
-						<span class="section-heading-subtxt">Our guides offer recipes, videos, techniques and tips for novices and advanced cooks.</span>
+						<p class="section-heading-subtxt">Our guides offer recipes, videos, techniques and tips for novices and advanced cooks.</p>
 						<ul class="cooking-guide-cards">
 							<li class="cooking-guide-card">
 								<figure class="cooking-guide-card-figure">
@@ -324,11 +324,54 @@
             <!--main section end-->
             <!--footer section start-->
             <footer>      
-            </footer>
-            <!--footer section end-->
+				<div class="footer-main">
+					<div class="wrapper">
+						<div class="newsletter">
+							<h4 class="section-heading">GET OUR NEWSLETTER</h4>
+							<p class="section-heading-subtxt">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a href="#FIXME" class="contact-us" title="contact us">contact us</a>anytime.</p>
+							<form method="GET" class="newsletter-form">
+								<div class="newsletter-email-container">
+									<input type="email" name="email" class="email-field" id="newsletter-email-field">
+									<span class="error-msg"></span>
+								</div>
+								<button class="sign-up-btn">Sign Up</button>
+							</form>
+						</div>
+						<div class="social-links">
+							<ul class="links">
+								<li><a href="#FIXME" title="Pintrest" target="_blank"></a></li>
+								<li><a href="#FIXME" title="Facebook" target="_blank"></a></li>
+								<li><a href="#FIXME" title="Twitter" target="_blank"></a></li>
+							</ul>
+							<div class="download-btn-container">
+								<a href="#FIXME" class="download-btn" target="_blank" title="Download on the AppStore">Download on the AppStore</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-end">
+					<div class="wrapper">
+						<div class="footer-end-left">
+							<ul class="footer-end-left-links">
+								<li><a href="#FIXME" title="NYTimes.com">NYTimes.com</a></li>
+								<li><a href="#FIXME" title="NYTimes.com/Food">NYTimes.com/Food</a></li>
+								<li><a href="#FIXME" title="FAQ">FAQ</a></li>
+								<li><a href="#FIXME" title="Send Us Feedback" class="bold-link">Send Us Feedback</a></li>
+							</ul>
+						</div>
+						<div class="footer-end-right">
+							<ul class="footer-end-left-links">
+								<li><a href="#FIXME" title="Privacy Policy">Privacy Policy</a></li>
+								<li><a href="#FIXME" title="Terms Of Service">Terms Of Service</a></li>
+								<li><a href="#FIXME" title="The New York Times Company">&copy; The New York Times Company</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--footer section end-->
         </div>
         <!--container end-->
-        <script>
-        </script>
+        <script type="text/javascript" src="assets/vendor/script.js"></script>
     </body>
 </html>
