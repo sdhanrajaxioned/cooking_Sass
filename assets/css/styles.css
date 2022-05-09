@@ -131,3 +131,18 @@ li {
   width: 78%;
   margin: 0 auto;
 }
+
+header .wrapper {
+  width: 96.3%;
+  display: flex;
+}
+header .logo {
+  flex-basis: 20%;
+}
+header .search-form,
+header .navbar {
+  flex-basis: 40%;
+}
+.search-form {
+  width: 100%;
+}

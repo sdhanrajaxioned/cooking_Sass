@@ -1,0 +1,23 @@
+// header styling starts here
+header {
+  .wrapper {  
+    width: 96.3%; 
+    display: flex;
+  }
+
+  .logo {
+    flex-basis: 20%;
+  }
+
+  .search-form,
+  .navbar  {
+    flex-basis: 40%;
+  }
+
+  @at-root 
+  .search-form {
+    width: 100%;
+  }
+
+}
+// header styling endss here
