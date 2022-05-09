@@ -83,3 +83,51 @@ sup {
 sub {
   bottom: -0.25em;
 }
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.section-heading {
+  font-size: 25px;
+}
+
+.section-heading-subtxt {
+  color: #999;
+  font-size: 27.5px;
+}
+
+.wrapper {
+  max-width: 1360px;
+  width: 85%;
+  margin: 0 auto;
+}
