@@ -32,12 +32,14 @@ li {
 
 // common styling
 .section-heading { font-size: $heading-txt-size; }
-
 .section-heading-subtxt { 
   color: $text-color;
   font-size: $heading-subtxt-size; 
 }
 
+.navbar {
+  a.color-primary { color: $primary-color ;}
+}
 // for wrapper
 .wrapper {
 	max-width: 1360px;

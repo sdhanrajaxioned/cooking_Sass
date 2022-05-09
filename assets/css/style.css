@@ -1,0 +1,204 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Force scrollbar */
+html {
+  box-sizing: border-box;
+  overflow-y: scroll; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/* Align radios and text inputs with their label */
+input[type='radio'] {
+  vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer; }
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit; }
+
+em {
+  font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle; }
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0; }
+
+sup {
+  top: -.7em; }
+
+sub {
+  bottom: -.25em; }
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " "; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+a {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+
+li {
+  display: inline-block;
+  list-style-type: none; }
+
+.section-heading {
+  font-size: 25px; }
+
+.section-heading-subtxt {
+  color: #999;
+  font-size: 27.5px; }
+
+.navbar a.color-primary {
+  color: #e33d26; }
+
+.wrapper {
+  max-width: 1360px;
+  width: 78%;
+  margin: 0 auto; }
+
+header .wrapper {
+  width: 96.3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.logo {
+  padding: 18px 42px 20px 0;
+  border-right: 1px solid #6B6B69; }
+
+.search-form {
+  padding-left: 43px;
+  position: relative;
+  display: flex;
+  flex-basis: 31.7%; }
+  @media only screen and (max-width: 1280px) {
+    .search-form {
+      flex-basis: 27%; } }
+
+.search-container {
+  flex-grow: 1; }
+
+#search-field {
+  width: 100%;
+  height: 30px;
+  border: none; }
+  #search-field:focus {
+    outline: none; }
+
+::placeholder {
+  color: #999;
+  font-size: 18px; }
+  @media only screen and (max-width: 1280px) {
+    ::placeholder {
+      font-size: 14px; } }
+
+.search-btn {
+  border: none;
+  background: none;
+  text-indent: -9999px;
+  outline: none; }
+  .search-btn::before {
+    content: "\f002";
+    position: absolute;
+    bottom: 10px;
+    left: 24px;
+    color: #999;
+    font-family: "fontAwesome";
+    font-size: 19px;
+    float: left;
+    text-indent: 0; }
+
+.error-msg {
+  display: none; }
+
+.navbar {
+  margin-left: auto; }
+  .navbar ul {
+    display: flex; }
+  .navbar li {
+    margin: 27px 21px 0px 0px;
+    font-size: 12px;
+    font-weight: 900; }
+  .navbar .recipe-box {
+    padding: 15px 20px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-bottom: 0px;
+    text-align: center; }
+    .navbar .recipe-box:hover {
+      background-color: #eee;
+      cursor: pointer; }
+  .navbar .log-in {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center; }
+  .navbar a {
+    color: #666;
+    font-size: 12px;
+    font-weight: 700; }
+    @media only screen and (max-width: 1280px) {
+      .navbar a {
+        font-size: 10px; } }
+    @media only screen and (min-width: 1024px) {
+      .navbar a:hover {
+        color: #000;
+        transition: .4s ease-in; } }
