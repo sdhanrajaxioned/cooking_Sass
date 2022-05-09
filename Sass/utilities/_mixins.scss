@@ -5,12 +5,15 @@
   @content;
 }
 
+// mixin to give hover effect only on desktop
 @mixin hover_effect($width){
   @media only screen and (min-width: $width) {
     @content;
   }
 }
 
+
+//mixin for media queries
 @mixin breakpoints($device) {
   @if($device == 'desktop') {
     @media only screen and (max-width: 1280px) {
