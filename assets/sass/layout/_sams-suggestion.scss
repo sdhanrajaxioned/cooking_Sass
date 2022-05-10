@@ -1,0 +1,52 @@
+.sams-suggestion {
+  background-color: $bg-color;
+  &__recipe-cards {
+    padding-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__recipe-card {
+      flex-basis: 23.35%;
+      margin-right: 2.2%;
+      background-color: $white;
+      border: 1px solid #ccc;
+
+      &:last-child { display: none;}
+      &:nth-child(4) { margin-right: 0;}
+
+    }
+  }
+  @at-root
+  .arrow-left {
+    display: none;
+  }
+
+  .arrow-right {
+    text-indent: -9999px;
+  }
+
+  @at-root
+  .sams-newsletter {
+    display: flex;
+    padding: 28px 74px;
+  }
+
+  @at-root 
+  .newsletter-grey-txt { display: block; }
+
+  &__newsletter-form {
+    display: flex;
+
+    @at-root
+    .email-container {
+      width: 245px;
+    }
+    @at-root
+    .email-field {
+      width: 100%;
+      padding: 10px 5px;
+      border: 1px solid #ccc;
+    }
+  }
+
+}

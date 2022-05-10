@@ -1,0 +1,17 @@
+.sign-up-btn {
+  padding: 0 12px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  background: $primary-color;
+  font-size: 14px;
+
+  @include hover_effect(995px) {
+    &:hover {
+      color: $white;
+      background-color: $secondary-color;
+      @include transition-hover();
+    }
+  }
+}
