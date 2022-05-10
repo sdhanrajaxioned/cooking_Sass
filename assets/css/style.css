@@ -202,3 +202,21 @@ header .wrapper {
       .navbar a:hover {
         color: #000;
         transition: .4s ease-in; } }
+
+.banner {
+  position: relative; }
+  .banner .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .banner-figure {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .banner-figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .recipe-card {
+    position: relative; }
