@@ -1,5 +1,6 @@
 // header styling starts here
 header {
+  position: inherit;
   .wrapper {  
     width: 96.3%; 
     @include flex(flex-start, center);
@@ -78,12 +79,18 @@ header {
   .navbar {
     margin-left: auto;
 
-    ul { display: flex; }
+    &__links { display: flex; }
 
     li {
       margin: 27px 21px 0px 0px;
       font-size: 12px;
       font-weight: 900;
+
+      @include breakpoints(desktop) {
+        & {
+          margin: 27px 17px 0px 0px;
+        }
+      }
     }
 
     .recipe-box {
@@ -117,13 +124,14 @@ header {
         }
       }
 
-      @include hover_effect(1024px) {
+      @include hover_effect(995px) {
         &:hover {
           color: #000;
-          transition: .4s ease-in; 
+          @include transition-hover()
         } 
       }
     }
   }
+
 }
 // header styling endss here

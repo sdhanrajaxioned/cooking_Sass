@@ -1,0 +1,192 @@
+.banner {
+  position: relative;
+  &__figure { 
+    height: 484px; 
+    @include breakpoints(tablet) {
+      height: auto;
+    }
+  }
+
+  & .wrapper {
+    @include flex(flex-start, flex-start) {
+      flex-direction: column;
+    }
+
+    @include breakpoints(tablet) {
+      @include flex(center, center)
+    }
+  }
+
+  @at-root
+  &__recipe-container{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+
+    @include breakpoints(tablet) {
+      position: unset;
+    }
+
+    &__recipe-card {
+      position: relative;
+      max-width: 320px;
+      padding: 51px 32px 40px;
+      background: $white;
+
+      @include breakpoints(tablet) {
+        & { max-width: none;}
+      }
+
+      @include breakpoints(ipad-mini) {
+        & { padding: 61px 0 10px;}
+      }
+
+      &__badge {
+        width: 108px;
+        height: 108px;
+        padding: 40px 10px 0;
+        border-radius: 54px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        background-color: $primary-color;
+        color: $white;
+        font-size: 15px;
+        font-weight: 900;
+        text-align: center;
+        white-space: nowrap;
+
+        @at-root
+        .break { display: block;}
+        @include breakpoints(tablet) {
+          & {
+          right: 50%;
+          transform: translate(50%, -50%);
+          }
+        }
+      }
+      &__content {
+        text-align: center;
+
+        @at-root 
+        .recipe-card__heading {
+          font-size: 29px;
+          font-weight: 300;
+          line-height: 1.35;
+
+          a{
+            color: $secondary-color;
+            font-weight: 300;
+
+            &:hover {
+              @include hover_effect(995px) {
+                color: $primary-color;
+                @include transition-hover();
+              }
+            }
+          }
+        }
+
+        @at-root
+        .recipe-card-subtxt {
+          padding: 12px 0 16px;
+          color: #76747B;
+          font-size: 16px;
+        }
+
+        @at-root
+        .recipe-card__author-figure {
+
+          img {
+            width: inherit;
+            border-radius: 50px;
+          }
+
+          figcaption { 
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+  &__social-links {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    @include breakpoints(tablet) {
+      position: unset;
+    }
+
+    @include breakpoints(ipad-mini) {
+      & li:first-child{
+        padding-bottom: 10px;
+        display: block;
+      }
+      & li:nth-child(2){
+        padding-left: 12%;  
+      }
+    }
+
+    &__link {
+      @at-root
+      .icons { 
+        color: $white;
+        text-indent: $indent; 
+        background-color: $secondary-color;
+        &::before {
+          @include font_icons(14px);
+        }
+
+        &:hover {
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
+      }
+      
+      @at-root
+      .bookmark-icon {
+        padding: 10px 12px;
+        border-radius: 5px;
+        font-size: 12px;
+        text-indent: 0;
+
+        &::before { 
+          content: "\f02e";
+          padding-right: 7px;
+        }
+      }
+
+      @at-root
+      .fb-icon {
+        @include icon-box();
+        &::before {
+          content: "\f39e";
+          @include icon-box-before();
+        }
+      }
+
+      @at-root
+      .pintrest-icon {
+        @include icon-box();
+        &::before {
+          content: "\f231";
+          @include icon-box-before();
+        }
+      }
+
+      @at-root
+      .forward-icon {
+        @include icon-box();
+        &::before {
+          content: "\f064";
+          @include icon-box-before();
+        }
+      }
+    }
+  }
+}

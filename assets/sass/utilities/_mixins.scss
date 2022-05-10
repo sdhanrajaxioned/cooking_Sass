@@ -12,6 +12,32 @@
   }
 }
 
+//mixin for fontAwesome
+
+@mixin font_icons($size) {
+  font-family: "fontAwesome";
+  font-size: $size;
+  float: left;
+  text-indent: 0;
+}
+
+@mixin icon-box() {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+@mixin transition-hover() {
+  transition: .4s ease-in;
+}
+
+@mixin icon-box-before() {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
 
 //mixin for media queries
 @mixin breakpoints($device) {
