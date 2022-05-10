@@ -32,9 +32,32 @@ li {
 
 // common styling
 .section-heading { font-size: $heading-txt-size; }
+
 .section-heading-subtxt { 
   color: $text-color;
   font-size: $heading-subtxt-size; 
+}
+
+.heading-txt { 
+  padding-top: 15px;
+  font-size: 24px;
+
+  & a {
+    color: $secondary-color;
+  }
+
+  & a:hover {
+    color: $primary-color;
+    @include hover_effect(995px){
+      @include transition-hover();
+    }
+  }
+
+}
+
+.heading-subtxt { 
+  color: $grey-subtxt;
+  font-size: 24px;
 }
 
 .navbar {
