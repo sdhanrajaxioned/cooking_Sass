@@ -53,7 +53,6 @@
   }
 
   @at-root 
-  .sams-recipe-card-info,
   .recipe-card-info {
     padding: 10px 15px;
     @include flex(space-between, stretch) {

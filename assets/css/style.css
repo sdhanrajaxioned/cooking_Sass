@@ -622,7 +622,6 @@ header .wrapper {
 .sams-suggestion .arrow-right {
   text-indent: -9999px;
 }
-.sams-recipe-card-info,
 .recipe-card-info {
   padding: 10px 15px;
   display: flex;
@@ -712,6 +711,26 @@ header .wrapper {
     color: #000;
     transition: 0.4s ease-in;
   }
+}
+
+.popular-recipes {
+  background-color: #F5F1EE;
+}
+.popular-recipes__cards {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+.popular-recipes__cards__card {
+  margin-right: 2.1%;
+  flex-basis: 48.9%;
+}
+.popular-recipes__cards__card:nth-child(even) {
+  margin-right: 0;
+}
+.popular-recipe-card-heading {
+  font-size: 28px;
 }
 
 .sign-up-btn {
