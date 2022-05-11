@@ -101,7 +101,7 @@ header {
   .navbar {
 
     @include breakpoints(desktop-mini) {
-      & { display: none;}
+      & { display: none; }
     }
     margin-left: auto;
 

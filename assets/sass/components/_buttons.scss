@@ -10,8 +10,8 @@
 
   @include hover_effect(995px) {
     &:hover {
-      color: $white;
       background-color: $secondary-color;
+      color: $white;
       @include transition-hover();
     }
   }
@@ -35,15 +35,15 @@
     }
   }
 
-  &:hover {
-    @include hover_effect(995px) {
-      color: $primary-color;
+  @include hover_effect(995px) {
+    &:hover {
       background-color: $secondary-color;
+      color: $primary-color;
     }
   }
 
   @include breakpoints(ipad-mini) {
-    font-size: 10px;
+    & { font-size: 10px; }
   }
 }
 
@@ -63,8 +63,9 @@
 
   &:hover {
     @include hover_effect(995px) {
-      color: $white;
       background-color: $secondary-color;
+      color: $white;
+      @include transition-hover
     } 
   }
 }
@@ -72,12 +73,19 @@
 .download-btn {
   padding: 5px 10px 5px 40px;
   margin-top: 13px;
-  position: relative;
   border-radius: 5px;
+  position: relative;
   background-color: $download-btn-color;
   color: $white;
   font-size: 10px;
   text-align: center;
+  
+  @include hover_effect(995px) {
+    &:hover { 
+      background-color: $secondary-color; 
+      @include transition-hover
+    }  
+  }
 
   &::before {
     content: "\f179";
@@ -93,17 +101,20 @@
 @at-root
 .hamburger { 
   display: none; 
+
   &:hover + .navbar {
     display: block;
   }
+
   @include breakpoints(desktop-mini) {
     & { 
       margin-left: auto;
       display: block; 
       flex-basis: 10%;
     }
+  }
 }
-}
+
 @at-root
 .bar {
   width: 25px;
@@ -111,6 +122,6 @@
   margin: 5px auto;
   display: block;
   background-color: $secondary-color;
-  transition: all 0.3s ease-in-out;
   text-indent: -9999px;
+  transition: all 0.3s ease-in-out;
 }

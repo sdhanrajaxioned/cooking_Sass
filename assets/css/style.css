@@ -428,9 +428,9 @@ header .wrapper {
   }
 }
 .banner__recipe-container__recipe-card {
-  position: relative;
   max-width: 320px;
   padding: 51px 32px 40px;
+  position: relative;
   background: #fff;
 }
 @media only screen and (max-width: 768px) {
@@ -528,9 +528,9 @@ header .wrapper {
   }
 }
 .icons {
+  background-color: #000;
   color: #fff;
   text-indent: -9999px;
-  background-color: #000;
 }
 .icons::before {
   font-family: "fontAwesome";
@@ -539,8 +539,8 @@ header .wrapper {
   text-indent: 0;
 }
 .icons:hover {
-  color: #000;
   background-color: #e33d26;
+  color: #000;
 }
 
 .bookmark-icon {
@@ -659,15 +659,14 @@ header .wrapper {
   }
 }
 .sams-suggestion__recipe-cards__recipe-card {
-  flex-basis: 23.35%;
   margin-right: 2.2%;
-  background-color: #fff;
   border: 1px solid #ccc;
+  flex-basis: 23.35%;
+  background-color: #fff;
 }
 @media only screen and (max-width: 995px) {
   .sams-suggestion__recipe-cards__recipe-card {
     width: 70%;
-    margin-right: 0;
     margin: 5px 0;
   }
 }
@@ -715,7 +714,16 @@ header .wrapper {
 }
 
 .bookmark-icons {
+  color: #a5a5a4;
   text-indent: -9999px;
+}
+@media only screen and (min-width: 995px) {
+  .bookmark-icons:hover {
+    color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
 }
 .bookmark-icons::after {
   content: "\f02e";
@@ -723,7 +731,6 @@ header .wrapper {
   font-size: 16px;
   float: left;
   text-indent: 0;
-  color: #a5a5a4;
 }
 
 .sams-newsletter {
@@ -841,8 +848,8 @@ header .wrapper {
 }
 @media only screen and (max-width: 995px) {
   .popular-recipe-card-content {
-    text-align: center;
     padding: 15px 20px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -906,13 +913,13 @@ header .wrapper {
 .cooking-guide__cards__card__content {
   max-height: 122px;
   padding: 13px 13px 55px;
-  color: #fff;
   background-color: #000;
+  color: #fff;
 }
 @media only screen and (max-width: 995px) {
   .cooking-guide__cards__card__content {
-    text-align: center;
     padding: 20px;
+    text-align: center;
   }
 }
 .cooking-guide-card-heading {
@@ -1019,6 +1026,9 @@ header .wrapper {
   .footer-icon:hover {
     color: #fff;
     background-color: #5b575c;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 .footer-icon::after {
@@ -1106,6 +1116,9 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .footer-end__left__links a:hover, .footer-end__right__links a:hover {
     color: #e33d26;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -1131,8 +1144,8 @@ header .wrapper {
 }
 @media only screen and (min-width: 995px) {
   .sign-up-btn:hover {
-    color: #fff;
     background-color: #000;
+    color: #fff;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
@@ -1159,8 +1172,8 @@ header .wrapper {
 }
 @media only screen and (min-width: 995px) {
   .btn-primary:hover {
-    color: #e33d26;
     background-color: #000;
+    color: #e33d26;
   }
 }
 @media only screen and (max-width: 995px) {
@@ -1184,20 +1197,31 @@ header .wrapper {
 }
 @media only screen and (min-width: 995px) {
   .btn-large:hover {
-    color: #fff;
     background-color: #000;
+    color: #fff;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
 .download-btn {
   padding: 5px 10px 5px 40px;
   margin-top: 13px;
-  position: relative;
   border-radius: 5px;
+  position: relative;
   background-color: #acaaad;
   color: #fff;
   font-size: 10px;
   text-align: center;
+}
+@media only screen and (min-width: 995px) {
+  .download-btn:hover {
+    background-color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
 }
 .download-btn::before {
   content: "\f179";
@@ -1231,8 +1255,8 @@ header .wrapper {
   margin: 5px auto;
   display: block;
   background-color: #000;
-  transition: all 0.3s ease-in-out;
   text-indent: -9999px;
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

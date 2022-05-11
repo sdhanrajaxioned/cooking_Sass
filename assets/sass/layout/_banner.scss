@@ -28,9 +28,9 @@
     }
 
     &__recipe-card {
-      position: relative;
       max-width: 320px;
       padding: 51px 32px 40px;
+      position: relative;
       background: $white;
 
       @include breakpoints(tablet) {
@@ -135,16 +135,16 @@
     &__link {
       @at-root
       .icons { 
+        background-color: $secondary-color;
         color: $white;
         text-indent: $indent; 
-        background-color: $secondary-color;
         &::before {
           @include font_icons(14px);
         }
 
         &:hover {
-          color: $secondary-color;
           background-color: $primary-color;
+          color: $secondary-color;
         }
       }
       

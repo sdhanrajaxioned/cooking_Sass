@@ -45,12 +45,14 @@
 				}
 
 				@include breakpoints(ipad-mini) {
-					text-align: center;
-					padding: 15px 20px;
+					&{
+						padding: 15px 20px;
+						text-align: center;
+					}
 				}
 
 				@include breakpoints(tablet) {
-					padding: 10px 15px;
+					& {	padding: 10px 15px; }
 				}
 			}
 		}

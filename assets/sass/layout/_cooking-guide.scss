@@ -29,12 +29,12 @@
       &__content {
         max-height: 122px;
         padding: 13px 13px 55px;
-        color: $white;
         background-color: $secondary-color;
+        color: $white;
 
         @include breakpoints(ipad-mini) {
+          padding: 20px;
           text-align: center;
-          padding: 20px
         }
       }
 

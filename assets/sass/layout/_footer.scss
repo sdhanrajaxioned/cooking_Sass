@@ -72,6 +72,7 @@
           @include hover_effect(995px) {
             color: $white;
             background-color: $social-icon-color;
+            @include transition-hover();
           }
         }
         
@@ -143,6 +144,7 @@
         display: flex;
         flex-direction: column;
       }
+
       a {
         padding: 0 18px;
         border-right: 1px solid $text-color;
@@ -156,6 +158,7 @@
         @include hover_effect(995px) {
           &:hover {
             color: $primary-color;
+            @include transition-hover();
           }
         }
 
@@ -164,9 +167,7 @@
         }
 
         @include breakpoints(mobile-small) {
-          & {
-            border-right: none;
-          }
+          & { border-right: none; }
         }
       }
     }

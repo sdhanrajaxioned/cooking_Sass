@@ -18,15 +18,14 @@
       }
     }
     &__recipe-card {
-      flex-basis: 23.35%;
       margin-right: 2.2%;
-      background-color: $white;
       border: 1px solid #ccc;
+      flex-basis: 23.35%;
+      background-color: $white;
 
       @include breakpoints(ipad-mini) {
         & { 
           width: 70%;
-          margin-right: 0;
           margin: 5px 0;
         }
       }
@@ -74,11 +73,18 @@
 
   @at-root
   .bookmark-icons { 
+    color: $grey-subtxt;
     text-indent: $indent;
+    @include hover_effect(995px) {
+      &:hover {
+        color: $secondary-color;
+        @include transition-hover();
+      }
+    }
+
     &::after {
       content: "\f02e"; 
       @include font_icons(16px){
-        color: $grey-subtxt;
       }
     }
   }
@@ -139,6 +145,7 @@
     & a {
       color: #666;
       text-decoration: underline;
+
       &:hover {
         @include hover_effect(995px) {
           color: $secondary-color;
