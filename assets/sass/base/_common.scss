@@ -54,6 +54,17 @@ li {
   }
 }
 
+.contact-us {
+  color: #666;
+  text-decoration: underline;
+  &:hover {
+    @include hover_effect(995px) {
+      color: $secondary-color;
+      @include transition-hover()
+    }
+  }
+}
+
 .heading-subtxt { 
   color: $grey-subtxt;
   font-size: 24px;

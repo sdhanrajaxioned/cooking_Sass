@@ -1,12 +1,43 @@
 .footer__main {
+  @include breakpoints(ipad-mini) {
+    & { text-align: center; }
+  }
+
+  @include breakpoints(ipad-mini) {
+    & { text-align:  center; }
+  }
   padding: 40px 0 50px;
   background-color: #e5e7e2;
 
   .wrapper {
-    display: flex;
+    @include flex(space-between, normal);
+    @include breakpoints(ipad-mini) {
+      & { flex-direction: column; }
+    }
   }
   &__newsletter {
-    &__newsletter-form { display: flex;}
+
+    @at-root
+    .newsletter-heading {
+      font-size: 21px;
+      font-weight: 300;
+    }
+
+    @at-root 
+    .newsletter-subtxt {
+      display: block;
+      padding: 15px 0 28px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    &__newsletter-form { 
+      display: flex;
+      @include breakpoints(ipad-mini) {
+        justify-content: center;
+      }
+    }
+    
   }
   @at-root
   .newsletter-email-container { 
@@ -23,6 +54,10 @@
     &__links {
       padding-bottom: 22px;
       border-bottom: 1px solid $download-btn-color;
+
+      @include breakpoints(ipad-mini) {
+        & { padding-top: 22px;}
+      }
       @at-root
       .footer-icon { 
         width: 50px;
@@ -67,6 +102,72 @@
     font-size: 20px;
     text-align: center;
   }
+}
 
+.footer-end {
+  background-color: #272228;
+  padding: 20px 0; 
   
+  @include breakpoints(desktop-mini) {
+    & { text-align: center; }
+  }
+  
+  & .wrapper { 
+    width: 96.3%;
+    @include flex(space-between, normal);
+
+    @include breakpoints(desktop-mini) {
+      & { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  }
+
+  &__right {
+    @include breakpoints(desktop-mini) {
+      & { padding-top: 10px;}
+    }
+  }
+  
+  &__left,
+  &__right{
+    @include breakpoints(desktop-mini){
+     & { width: 100%; }
+    }
+
+    &__links {
+      @include breakpoints(mobile-small) {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        padding: 0 18px;
+        border-right: 1px solid $text-color;
+        color: $white;
+        font-size: 13px;
+
+        @include hover_effect(995px) {
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        @include breakpoints(desktop) {
+          & { padding: 0 10px;}
+        }
+
+        @include breakpoints(mobile-small) {
+          & {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+
+  @at-root
+  .border-none { border-right: none;  }
 }
