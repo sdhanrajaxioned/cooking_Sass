@@ -4,12 +4,22 @@ header {
   .wrapper {  
     width: 96.3%; 
     @include flex(flex-start, center);
+    @include breakpoints(mobile) {
+      & { 
+        flex-wrap: wrap; 
+        justify-content: center;
+      }
+    }
   }
 
   @at-root
   .logo { 
     padding: 18px 42px 20px 0; 
     border-right: 1px solid #6B6B69;
+
+    @include breakpoints(mobile) {
+      & { border-right: none; }
+    }
   }
 
   @at-root 
@@ -20,8 +30,13 @@ header {
     flex-basis: 31.7%;
 
     @include breakpoints(desktop) {
-      & {
-        flex-basis: 27%;
+      & { flex-basis: 70%; }
+    }
+
+    @include breakpoints(mobile) {
+      & { 
+        order: 3;
+        flex-grow: 1;
       }
     }
   }
@@ -70,6 +85,13 @@ header {
       float: left;
       text-indent: 0;
     }
+
+    @include breakpoints(mobile) {
+      &::before {
+        bottom: 9px;
+        left: 36px;
+      }
+    }
   }
 
   @at-root 
@@ -77,9 +99,28 @@ header {
 
   @at-root
   .navbar {
+
+    @include breakpoints(desktop-mini) {
+      & { display: none;}
+    }
     margin-left: auto;
 
-    &__links { display: flex; }
+    &__links { 
+      display: flex; 
+
+      @include breakpoints(desktop-mini) {
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $secondary-color;
+        text-align: center;
+      }
+    }
 
     li {
       margin: 27px 21px 0px 0px;
@@ -132,6 +173,8 @@ header {
       }
     }
   }
+
+  
 
 }
 // header styling endss here

@@ -139,6 +139,8 @@ li {
 }
 @media only screen and (min-width: 995px) {
   .heading-txt a:hover {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -150,6 +152,8 @@ li {
 @media only screen and (min-width: 995px) {
   .contact-us:hover {
     color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -191,6 +195,8 @@ li {
 @media only screen and (min-width: 995px) {
   .recipe-name a:hover {
     color: #e33d26;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -221,13 +227,26 @@ header {
 }
 header .wrapper {
   width: 96.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+@media only screen and (max-width: 540px) {
+  header .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .logo {
   padding: 18px 42px 20px 0;
   border-right: 1px solid #6B6B69;
+}
+@media only screen and (max-width: 540px) {
+  .logo {
+    border-right: none;
+  }
 }
 
 .search-form {
@@ -238,7 +257,13 @@ header .wrapper {
 }
 @media only screen and (max-width: 1280px) {
   .search-form {
-    flex-basis: 27%;
+    flex-basis: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .search-form {
+    order: 3;
+    flex-grow: 1;
   }
 }
 
@@ -282,6 +307,12 @@ header .wrapper {
   float: left;
   text-indent: 0;
 }
+@media only screen and (max-width: 540px) {
+  .search-btn::before {
+    bottom: 9px;
+    left: 36px;
+  }
+}
 
 .error-msg {
   display: none;
@@ -290,8 +321,27 @@ header .wrapper {
 .navbar {
   margin-left: auto;
 }
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+}
 .navbar__links {
   display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .navbar__links {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #000;
+    text-align: center;
+  }
 }
 .navbar li {
   margin: 27px 21px 0px 0px;
@@ -333,6 +383,8 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .navbar a:hover {
     color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -349,6 +401,8 @@ header .wrapper {
   }
 }
 .banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -356,6 +410,8 @@ header .wrapper {
 }
 @media only screen and (max-width: 768px) {
   .banner .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,6 +484,8 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .recipe-card__heading a:hover {
     color: #e33d26;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -638,6 +696,8 @@ header .wrapper {
 }
 .recipe-card-info {
   padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -647,6 +707,8 @@ header .wrapper {
 
 .card-bookmark {
   padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -723,6 +785,8 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .sams-suggestion .newsletter-grey-txt a:hover {
     color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -736,6 +800,8 @@ header .wrapper {
 }
 .popular-recipes__cards {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: normal;
   align-items: normal;
@@ -766,6 +832,8 @@ header .wrapper {
   padding: 30px 40px;
   border: 1px solid #ccc;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -806,6 +874,8 @@ header .wrapper {
 }
 .cooking-guide__cards {
   padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: normal;
   align-items: normal;
@@ -886,6 +956,8 @@ header .wrapper {
   }
 }
 .footer__main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: normal;
@@ -990,6 +1062,8 @@ header .wrapper {
 }
 .footer-end .wrapper {
   width: 96.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: normal;
@@ -1023,6 +1097,12 @@ header .wrapper {
   color: #fff;
   font-size: 13px;
 }
+.footer-end__left__links a.bold-link, .footer-end__right__links a.bold-link {
+  font-weight: 800;
+}
+.footer-end__left__links a.border-none, .footer-end__right__links a.border-none {
+  border-right: none;
+}
 @media only screen and (min-width: 995px) {
   .footer-end__left__links a:hover, .footer-end__right__links a:hover {
     color: #e33d26;
@@ -1037,9 +1117,6 @@ header .wrapper {
   .footer-end__left__links a, .footer-end__right__links a {
     border-right: none;
   }
-}
-.border-none {
-  border-right: none;
 }
 
 .sign-up-btn {
@@ -1056,6 +1133,8 @@ header .wrapper {
   .sign-up-btn:hover {
     color: #fff;
     background-color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
   }
 }
@@ -1130,6 +1209,30 @@ header .wrapper {
   font-size: 28px;
   float: left;
   text-indent: 0;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger:hover + .navbar {
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    margin-left: auto;
+    display: block;
+    flex-basis: 10%;
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  display: block;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+  text-indent: -9999px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -88,3 +88,29 @@
     @include font_icons(28px)
   }
 }
+
+//hamburger
+@at-root
+.hamburger { 
+  display: none; 
+  &:hover + .navbar {
+    display: block;
+  }
+  @include breakpoints(desktop-mini) {
+    & { 
+      margin-left: auto;
+      display: block; 
+      flex-basis: 10%;
+    }
+}
+}
+@at-root
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  display: block;
+  background-color: $secondary-color;
+  transition: all 0.3s ease-in-out;
+  text-indent: -9999px;
+}
