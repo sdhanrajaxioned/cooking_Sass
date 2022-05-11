@@ -387,7 +387,7 @@ header .wrapper {
   transform: translate(50%, -50%);
   background-color: #e33d26;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 900;
   text-align: center;
   white-space: nowrap;
@@ -750,8 +750,7 @@ header .wrapper {
     margin-right: 0;
   }
 }
-.popuar-recipe-card-content,
-.recipe-card-content {
+.popular-recipe-card-content {
   height: 161px;
   padding: 30px 40px;
   border: 1px solid #ccc;
@@ -762,15 +761,13 @@ header .wrapper {
   flex-direction: column;
 }
 @media only screen and (max-width: 995px) {
-  .popuar-recipe-card-content,
-.recipe-card-content {
+  .popular-recipe-card-content {
     text-align: center;
     padding: 15px 20px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .popuar-recipe-card-content,
-.recipe-card-content {
+  .popular-recipe-card-content {
     padding: 10px 15px;
   }
 }
@@ -791,6 +788,76 @@ header .wrapper {
 
 .editors-collection-cta {
   text-align: center;
+}
+
+.cooking-guide {
+  background-color: #F5F1EE;
+}
+.cooking-guide__cards {
+  padding-top: 45px;
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 995px) {
+  .cooking-guide__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cooking-guide__cards__card {
+  margin-right: 2.1%;
+  flex-basis: 23.4%;
+}
+.cooking-guide__cards__card:last-child {
+  display: none;
+}
+.cooking-guide__cards__card:nth-child(4) {
+  margin-right: 0;
+}
+@media only screen and (max-width: 995px) {
+  .cooking-guide__cards__card {
+    width: 80%;
+    margin: 15px 0;
+  }
+}
+.cooking-guide__cards__card__content {
+  max-height: 122px;
+  padding: 13px 13px 55px;
+  color: #fff;
+  background-color: #000;
+}
+@media only screen and (max-width: 995px) {
+  .cooking-guide__cards__card__content {
+    text-align: center;
+    padding: 20px;
+  }
+}
+.cooking-guide-card-heading {
+  padding: 3px 0;
+  font-weight: 700;
+}
+
+.cooking-guide-author {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cooking-guide-cta {
+  padding: 40px 0 50px;
+  text-align: center;
+}
+@media only screen and (max-width: 995px) {
+  .cooking-guide-cta {
+    padding: 10px 0 25px;
+  }
 }
 
 .sign-up-btn {

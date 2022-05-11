@@ -1,0 +1,71 @@
+.cooking-guide {
+  background-color: $bg-color;
+  &__cards {
+    padding-top: 45px;
+    
+    @include flex(normal, normal) {
+			flex-wrap: wrap;
+		}
+
+    @include breakpoints(ipad-mini){
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__card {
+      margin-right: 2.1%;
+      flex-basis: 23.4%;
+
+      &:last-child { display: none; } 
+      &:nth-child(4) { margin-right: 0; }
+
+      @include breakpoints(ipad-mini) {
+       & {
+          width: 80%;
+          margin: 15px 0;
+       }
+      }
+
+      &__content {
+        max-height: 122px;
+        padding: 13px 13px 55px;
+        color: $white;
+        background-color: $secondary-color;
+
+        @include breakpoints(ipad-mini) {
+          text-align: center;
+          padding: 20px
+        }
+      }
+
+      @at-root
+      .cooking-guide-card-heading {
+        padding: 3px 0;
+        font-weight: 700;
+      }
+
+      @at-root
+      .cooking-guide-author {
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      @at-root
+      .card-subtitle {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  @at-root
+  .cooking-guide-cta { 
+    padding: 40px 0 50px;
+    text-align: center; 
+
+    @include breakpoints(ipad-mini) {
+      & { padding: 10px 0 25px; }
+    }
+  }
+}
