@@ -1,32 +1,72 @@
-footer {
-  .footer-main {
-    background-color: #e5e7e2;
+.footer__main {
+  padding: 40px 0 50px;
+  background-color: #e5e7e2;
 
-    .wrapper {
-      display: flex;
-    }
-    &__newsletter {
-      &__newsletter-form {
-        display: flex;
+  .wrapper {
+    display: flex;
+  }
+  &__newsletter {
+    &__newsletter-form { display: flex;}
+  }
+  @at-root
+  .newsletter-email-container { 
+    width: 250px;
+  }
+  @at-root
+  .email-field {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+  }
+
+  &__social-links {
+    &__links {
+      padding-bottom: 22px;
+      border-bottom: 1px solid $download-btn-color;
+      @at-root
+      .footer-icon { 
+        width: 50px;
+        height: 50px;
+        margin: 0 6px;
+        border: 1px solid #ccc;
+        border-radius: 50%; 
+        color: $social-icon-color;
+        text-indent: $indent; 
+
+        &:hover {
+          @include hover_effect(995px) {
+            color: $white;
+            background-color: $social-icon-color;
+          }
+        }
+        
+        &::after {
+          width: 100%;
+          height: 100%;
+          padding-top: 13px;
+          text-align: center;
+          @include font_icons(22px)
+        }
+
       }
-    }
+      @at-root
+      .pintrest::after { content: "\f231"; }
+      
+      @at-root
+      .facebook::after { content: "\f39e"; }
 
-    @at-root
-    .newsletter-email-container { 
-      width: 250px;
-    }
-
-    @at-root
-    .email-field {
-      width: 100%;
-      padding: 10px 5px;
-      border: 1px solid #ccc;
-    }
-
-    &__social-links {
-      &_links li a {
-
-      }
+      @at-root
+      .twitter::after { content: "\f099"; }
     }
   }
+
+  @at-root
+  .large-txt {
+    display: block;
+    color: $white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  
 }

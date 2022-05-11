@@ -68,3 +68,23 @@
     } 
   }
 }
+
+.download-btn {
+  padding: 5px 10px 5px 40px;
+  margin-top: 13px;
+  position: relative;
+  border-radius: 5px;
+  background-color: $download-btn-color;
+  color: $white;
+  font-size: 10px;
+  text-align: center;
+
+  &::before {
+    content: "\f179";
+    padding-right: 20px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    @include font_icons(28px)
+  }
+}
