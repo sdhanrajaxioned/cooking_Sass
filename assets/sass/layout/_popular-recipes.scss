@@ -1,0 +1,22 @@
+.popular-recipes {
+    background-color: $bg-color;
+
+    &__cards {
+        
+        @include flex(normal, normal) {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            margin-right: 2.1%;
+            flex-basis: 48.9%;
+            &:nth-child(even) { margin-right: 0; }
+        }
+    }
+
+    @at-root
+    .popular-recipe-card-heading {
+        font-size: 28px;
+    }
+
+}
