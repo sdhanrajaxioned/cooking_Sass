@@ -16,3 +16,55 @@
     }
   }
 }
+
+
+.btn-primary {
+  padding: 10px 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: $primary-color  ;
+  color: $white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &:before {
+    @include font_icons(16px) {
+      content: "\f02e";
+      padding-right: 9px;
+    }
+  }
+
+  &:hover {
+    @include hover_effect(995px) {
+      color: $primary-color;
+      background-color: $secondary-color;
+    }
+  }
+
+  @include breakpoints(ipad-mini) {
+    font-size: 10px;
+  }
+}
+
+.btn-large {
+  padding: 12px 30px;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  color: $secondary-color;
+  font-size: 14px;
+
+  @include breakpoints(mobile-small) {
+    & {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+  }
+
+  &:hover {
+    @include hover_effect(995px) {
+      color: $white;
+      background-color: $secondary-color;
+    } 
+  }
+}

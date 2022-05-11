@@ -574,6 +574,9 @@ header .wrapper {
 .sams-suggestion {
   background-color: #F5F1EE;
 }
+.sams-suggestion .wrapper {
+  border-bottom: 7px solid #000;
+}
 .sams-suggestion__recipe-cards {
   padding-top: 38px;
   display: flex;
@@ -716,21 +719,78 @@ header .wrapper {
 .popular-recipes {
   background-color: #F5F1EE;
 }
+.popular-recipes .wrapper {
+  padding-bottom: 71px;
+  border-bottom: 7px solid #000;
+}
 .popular-recipes__cards {
+  margin-top: 15px;
   display: flex;
   justify-content: normal;
   align-items: normal;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 995px) {
+  .popular-recipes__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .popular-recipes__cards__card {
-  margin-right: 2.1%;
+  margin: 0 2.1% 32px 0;
   flex-basis: 48.9%;
 }
 .popular-recipes__cards__card:nth-child(even) {
   margin-right: 0;
 }
+@media only screen and (max-width: 995px) {
+  .popular-recipes__cards__card {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+.popuar-recipe-card-content,
+.recipe-card-content {
+  height: 161px;
+  padding: 30px 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 995px) {
+  .popuar-recipe-card-content,
+.recipe-card-content {
+    text-align: center;
+    padding: 15px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popuar-recipe-card-content,
+.recipe-card-content {
+    padding: 10px 15px;
+  }
+}
+
 .popular-recipe-card-heading {
-  font-size: 28px;
+  font-size: 24px;
+}
+@media only screen and (max-width: 995px) {
+  .popular-recipe-card-heading {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popular-recipe-card-heading {
+    font-size: 18px;
+  }
+}
+
+.editors-collection-cta {
+  text-align: center;
 }
 
 .sign-up-btn {
@@ -748,6 +808,56 @@ header .wrapper {
     color: #fff;
     background-color: #000;
     transition: 0.4s ease-in;
+  }
+}
+
+.btn-primary {
+  padding: 10px 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #e33d26;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.btn-primary:before {
+  font-family: "fontAwesome";
+  font-size: 16px;
+  float: left;
+  text-indent: 0;
+  content: "\f02e";
+  padding-right: 9px;
+}
+@media only screen and (min-width: 995px) {
+  .btn-primary:hover {
+    color: #e33d26;
+    background-color: #000;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .btn-primary {
+    font-size: 10px;
+  }
+}
+
+.btn-large {
+  padding: 12px 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  font-size: 14px;
+}
+@media only screen and (max-width: 480px) {
+  .btn-large {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 995px) {
+  .btn-large:hover {
+    color: #fff;
+    background-color: #000;
   }
 }
 
