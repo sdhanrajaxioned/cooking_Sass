@@ -1,0 +1,32 @@
+footer {
+  .footer-main {
+    background-color: #e5e7e2;
+
+    .wrapper {
+      display: flex;
+    }
+    &__newsletter {
+      &__newsletter-form {
+        display: flex;
+      }
+    }
+
+    @at-root
+    .newsletter-email-container { 
+      width: 250px;
+    }
+
+    @at-root
+    .email-field {
+      width: 100%;
+      padding: 10px 5px;
+      border: 1px solid #ccc;
+    }
+
+    &__social-links {
+      &_links li a {
+
+      }
+    }
+  }
+}

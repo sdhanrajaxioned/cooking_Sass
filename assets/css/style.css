@@ -860,6 +860,25 @@ header .wrapper {
   }
 }
 
+footer .footer-main {
+  background-color: #e5e7e2;
+}
+footer .footer-main .wrapper {
+  display: flex;
+}
+footer .footer-main__newsletter__newsletter-form {
+  display: flex;
+}
+.newsletter-email-container {
+  width: 250px;
+}
+
+.email-field {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+}
+
 .sign-up-btn {
   padding: 0 12px;
   margin-left: 16px;
