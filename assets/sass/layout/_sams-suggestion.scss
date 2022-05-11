@@ -5,17 +5,44 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include breakpoints(ipad-mini) {
+      & { 
+        flex-direction: column; 
+        align-items: center;
+      }
+    }
     &__recipe-card {
       flex-basis: 23.35%;
       margin-right: 2.2%;
       background-color: $white;
       border: 1px solid #ccc;
 
+      @include breakpoints(ipad-mini) {
+        & { 
+          width: 70%;
+          margin-right: 0;
+          margin: 5px 0;
+        }
+      }
+
+      @include breakpoints(tablet) {
+        & {
+          width: 85%;
+        }
+      }
+
+      @include breakpoints(mobile) {
+        & {
+          width: 100%;
+        }
+      }
+
       &:last-child { display: none;}
       &:nth-child(4) { margin-right: 0;}
-
     }
   }
+
   @at-root
   .arrow-left {
     display: none;
@@ -25,10 +52,49 @@
     text-indent: -9999px;
   }
 
+  @at-root 
+  .sams-recipe-card-info,
+  .recipe-card-info {
+    padding: 10px 15px;
+    @include flex(space-between, stretch) {
+      flex-direction: column;
+    }
+    min-height: 125px;
+  }
+
+  @at-root 
+  .card-bookmark{
+    padding: 10px 0;
+    @include flex(space-between, stretch)
+  }
+
+  @at-root
+  .bookmark-icons { 
+    text-indent: $indent;
+    &::after {
+      content: "\f02e"; 
+      @include font_icons(16px){
+        color: $grey-subtxt;
+      }
+    }
+  }
+
   @at-root
   .sams-newsletter {
-    display: flex;
     padding: 28px 74px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoints(desktop) {
+      & { padding: 28px 12px; }
+    }
+
+    @include breakpoints(desktop-mini) {
+      & {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   @at-root 
@@ -36,6 +102,10 @@
 
   &__newsletter-form {
     display: flex;
+
+    @include breakpoints(desktop-mini) {
+      & {padding-top: 15px;}
+    }
 
     @at-root
     .email-container {
@@ -49,4 +119,28 @@
     }
   }
 
+  @at-root
+  .newsletter-bold-txt{
+    font-weight: 700;
+
+    @include breakpoints(desktop) {
+      & { font-size: 14px; }
+    }
+  }
+
+  .newsletter-grey-txt {
+    color: $grey-subtxt;
+    font-size: 13px;
+
+    & a {
+      color: #666;
+      text-decoration: underline;
+      &:hover {
+        @include hover_effect(995px) {
+          color: $secondary-color;
+          @include transition-hover()
+        }
+      }
+    }
+  }
 }

@@ -128,7 +128,7 @@ li {
 }
 
 .heading-txt {
-  padding-top: 15px;
+  padding: 15px 0 5px;
   font-size: 24px;
 }
 .heading-txt a {
@@ -147,10 +147,32 @@ li {
   color: #A5A5A4;
   font-size: 24px;
 }
+@media only screen and (max-width: 995px) {
+  .heading-subtxt {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heading-subtxt {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .heading-subtxt {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .heading-subtxt {
+    font-size: 15px;
+  }
+}
 
 .recipe-name {
+  padding-bottom: 3px;
   font-size: 15px;
   font-weight: 900;
+  line-height: 1.1;
 }
 .recipe-name a {
   color: #000;
@@ -558,11 +580,34 @@ header .wrapper {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 995px) {
+  .sams-suggestion__recipe-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sams-suggestion__recipe-cards__recipe-card {
   flex-basis: 23.35%;
   margin-right: 2.2%;
   background-color: #fff;
   border: 1px solid #ccc;
+}
+@media only screen and (max-width: 995px) {
+  .sams-suggestion__recipe-cards__recipe-card {
+    width: 70%;
+    margin-right: 0;
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sams-suggestion__recipe-cards__recipe-card {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sams-suggestion__recipe-cards__recipe-card {
+    width: 100%;
+  }
 }
 .sams-suggestion__recipe-cards__recipe-card:last-child {
   display: none;
@@ -577,9 +622,50 @@ header .wrapper {
 .sams-suggestion .arrow-right {
   text-indent: -9999px;
 }
-.sams-newsletter {
+.sams-recipe-card-info,
+.recipe-card-info {
+  padding: 10px 15px;
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  min-height: 125px;
+}
+
+.card-bookmark {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.bookmark-icons {
+  text-indent: -9999px;
+}
+.bookmark-icons::after {
+  content: "\f02e";
+  font-family: "fontAwesome";
+  font-size: 16px;
+  float: left;
+  text-indent: 0;
+  color: #A5A5A4;
+}
+
+.sams-newsletter {
   padding: 28px 74px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1280px) {
+  .sams-newsletter {
+    padding: 28px 12px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .sams-newsletter {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .newsletter-grey-txt {
@@ -588,6 +674,11 @@ header .wrapper {
 
 .sams-suggestion__newsletter-form {
   display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .sams-suggestion__newsletter-form {
+    padding-top: 15px;
+  }
 }
 .email-container {
   width: 245px;
@@ -599,6 +690,30 @@ header .wrapper {
   border: 1px solid #ccc;
 }
 
+.newsletter-bold-txt {
+  font-weight: 700;
+}
+@media only screen and (max-width: 1280px) {
+  .newsletter-bold-txt {
+    font-size: 14px;
+  }
+}
+
+.sams-suggestion .newsletter-grey-txt {
+  color: #A5A5A4;
+  font-size: 13px;
+}
+.sams-suggestion .newsletter-grey-txt a {
+  color: #666;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 995px) {
+  .sams-suggestion .newsletter-grey-txt a:hover {
+    color: #000;
+    transition: 0.4s ease-in;
+  }
+}
+
 .sign-up-btn {
   padding: 0 12px;
   margin-left: 16px;
@@ -607,6 +722,7 @@ header .wrapper {
   color: #fff;
   background: #e33d26;
   font-size: 14px;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 995px) {
   .sign-up-btn:hover {

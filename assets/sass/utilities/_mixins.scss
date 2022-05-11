@@ -19,6 +19,7 @@
   font-size: $size;
   float: left;
   text-indent: 0;
+  @content;
 }
 
 @mixin icon-box() {

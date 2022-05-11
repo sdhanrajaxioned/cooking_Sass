@@ -39,7 +39,7 @@ li {
 }
 
 .heading-txt { 
-  padding-top: 15px;
+  padding: 15px 0 5px;
   font-size: 24px;
 
   & a {
@@ -52,18 +52,31 @@ li {
       @include transition-hover();
     }
   }
-
 }
 
 .heading-subtxt { 
   color: $grey-subtxt;
   font-size: 24px;
+
+  @include breakpoints(ipad-mini){
+    & { font-size: 20px;}
+  }
+  @include breakpoints(tablet){
+    & { font-size: 18px;}
+  }
+  @include breakpoints(mobile){
+    & { font-size: 16px;}
+  }
+  @include breakpoints(mobile-small){
+    & { font-size: 15px;}
+  }
 }
 
 .recipe-name {
+  padding-bottom: 3px;
   font-size: 15px;
   font-weight: 900;
-
+  line-height: 1.1;
   & a {
     color: $secondary-color;
     @include hover_effect(995px){

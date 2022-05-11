@@ -6,6 +6,7 @@
   color: $white;
   background: $primary-color;
   font-size: 14px;
+  white-space: nowrap;
 
   @include hover_effect(995px) {
     &:hover {
