@@ -1,5 +1,10 @@
 .sams-suggestion {
   background-color: $bg-color;
+
+  & .wrapper {
+    border-bottom: 7px solid $secondary-color;
+  }
+  
   &__recipe-cards {
     padding-top: 38px;
     display: flex;
