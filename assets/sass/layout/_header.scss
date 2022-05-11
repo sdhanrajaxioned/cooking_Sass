@@ -1,0 +1,137 @@
+// header styling starts here
+header {
+  position: inherit;
+  .wrapper {  
+    width: 96.3%; 
+    @include flex(flex-start, center);
+  }
+
+  @at-root
+  .logo { 
+    padding: 18px 42px 20px 0; 
+    border-right: 1px solid #6B6B69;
+  }
+
+  @at-root 
+  .search-form{
+    padding-left: 43px;
+    position: relative;
+    display: flex;
+    flex-basis: 31.7%;
+
+    @include breakpoints(desktop) {
+      & {
+        flex-basis: 27%;
+      }
+    }
+  }
+  
+  @at-root 
+  .search-container { flex-grow: 1;}
+
+  @at-root 
+  #search-field {
+    width: 100%;  
+    height: 30px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  @at-root
+  ::placeholder {
+    color: $text-color;
+    font-size: 18px;
+
+    @include breakpoints(desktop) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @at-root 
+  .search-btn{
+    border: none;
+    background: none;
+    text-indent: -9999px;
+    outline: none;
+
+    &::before {
+      content: "\f002";
+      position: absolute;
+      bottom: 10px;
+      left: 24px;
+      color: $text-color;
+      font-family: "fontAwesome";
+      font-size: 19px;
+      float: left;
+      text-indent: 0;
+    }
+  }
+
+  @at-root 
+  .error-msg { display: none; }
+
+  @at-root
+  .navbar {
+    margin-left: auto;
+
+    &__links { display: flex; }
+
+    li {
+      margin: 27px 21px 0px 0px;
+      font-size: 12px;
+      font-weight: 900;
+
+      @include breakpoints(desktop) {
+        & {
+          margin: 27px 17px 0px 0px;
+        }
+      }
+    }
+
+    .recipe-box {
+      padding: 15px 20px;
+      margin-top: 10px;
+      border: 1px solid #000000;
+      border-bottom: 0px;
+      text-align: center;
+
+      &:hover {
+        background-color: #eee;
+        cursor: pointer;
+      }
+    }
+
+    .log-in {
+      display: block;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: center;
+    }
+        
+    a {
+      color: #666;
+      font-size: 12px;
+      font-weight: 700;
+
+      @include breakpoints(desktop) {
+        & {
+          font-size: 10px;
+        }
+      }
+
+      @include hover_effect(995px) {
+        &:hover {
+          color: #000;
+          @include transition-hover()
+        } 
+      }
+    }
+  }
+
+}
+// header styling endss here

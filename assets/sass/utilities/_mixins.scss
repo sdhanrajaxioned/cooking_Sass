@@ -1,0 +1,69 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  @content;
+}
+
+// mixin to give hover effect only on desktop
+@mixin hover_effect($width){
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+//mixin for fontAwesome
+
+@mixin font_icons($size) {
+  font-family: "fontAwesome";
+  font-size: $size;
+  float: left;
+  text-indent: 0;
+}
+
+@mixin icon-box() {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+@mixin transition-hover() {
+  transition: .4s ease-in;
+}
+
+@mixin icon-box-before() {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+//mixin for media queries
+@mixin breakpoints($device) {
+  @if($device == 'desktop') {
+    @media only screen and (max-width: 1280px) {
+      @content;
+    }
+  } @else if($device == 'desktop-mini') {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    } 
+  } @else if($device == 'ipad-mini') {
+    @media only screen and (max-width: 995px) {
+      @content;
+    } 
+  } @else if($device == 'tablet') {
+    @media only screen and (max-width: 768px) {
+      @content;
+    } 
+  } @else if($device == 'mobile') {
+    @media only screen and (max-width: 540px) {
+      @content;
+    } 
+  } @else if($device == 'mobile-small') {
+    @media only screen and (max-width: 480px) {
+      @content;
+    } 
+  }
+}

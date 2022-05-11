@@ -1,0 +1,19 @@
+{
+  "name": "cooking_sass",
+  "version": "1.0.0",
+  "description": "prdxn-dev-framework\r ===================",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass Sass/styles.scss assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sdhanrajaxioned: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@github.com/sdhanrajaxioned/cooking_Sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdhanrajaxioned/cooking_Sass/issues"
+  },
+  "homepage": "https://github.com/sdhanrajaxioned/cooking_Sass#readme"
+}
