@@ -1,7 +1,9 @@
 .sams-suggestion {
   position: relative;
   background-color: $bg-color;
-  text-align:  center ;
+
+  @include breakpoints(ipad-mini) { text-align: center; }
+
 
   & .wrapper {
     border-bottom: 7px solid $secondary-color;

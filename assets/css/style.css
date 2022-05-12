@@ -680,7 +680,11 @@ header .wrapper {
 
 .what-to-cook {
   background-color: #f5f1ee;
-  text-align: center;
+}
+@media only screen and (max-width: 995px) {
+  .what-to-cook {
+    text-align: center;
+  }
 }
 .what-to-cook {
   padding-top: 52px;
@@ -731,7 +735,11 @@ header .wrapper {
 .sams-suggestion {
   position: relative;
   background-color: #f5f1ee;
-  text-align: center;
+}
+@media only screen and (max-width: 995px) {
+  .sams-suggestion {
+    text-align: center;
+  }
 }
 .sams-suggestion .wrapper {
   border-bottom: 7px solid #000;
@@ -925,7 +933,11 @@ header .wrapper {
 
 .popular-recipes {
   background-color: #f5f1ee;
-  text-align: center;
+}
+@media only screen and (max-width: 995px) {
+  .popular-recipes {
+    text-align: center;
+  }
 }
 .popular-recipes .wrapper {
   padding-bottom: 71px;
@@ -1010,7 +1022,11 @@ header .wrapper {
 .cooking-guide {
   position: relative;
   background-color: #f5f1ee;
-  text-align: center;
+}
+@media only screen and (max-width: 995px) {
+  .cooking-guide {
+    text-align: center;
+  }
 }
 .cooking-guide__cards {
   padding-top: 45px;

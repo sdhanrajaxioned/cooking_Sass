@@ -1,6 +1,8 @@
 .what-to-cook {
   background-color: $bg-color;
-  text-align: center;
+  
+  @include breakpoints(ipad-mini) { text-align: center; }
+
   & {
     padding-top: 52px;
     text-align: center;

@@ -1,6 +1,8 @@
 .popular-recipes {
 	background-color: $bg-color;
-  text-align: center;
+
+  @include breakpoints(ipad-mini) { text-align: center; }
+
 
 	& .wrapper {
 		padding-bottom: 71px;
