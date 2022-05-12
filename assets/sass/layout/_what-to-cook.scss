@@ -5,25 +5,30 @@
     text-align: center;
   }
 
-  & .wrapper {
-    border-bottom: 7px solid $secondary-color;
+  @include breakpoints(tablet) {
+    & { padding-top: 30px; }
   }
+
+  & .wrapper { border-bottom: 7px solid $secondary-color; }
 
   &__heading {
     font-size: 42px;
     font-weight: 900;
 
     @include breakpoints(tablet) {
-      font-size: 30px;
+     & { font-size: 30px; }
     }
+
     @include breakpoints(mobile-small) {
-      font-size: 20px;
+     & { font-size: 20px; }
     }
   }
+
   &__heading-subtxt {
     padding-bottom: 52px;
     font-size: 13px;
     font-weight: 300;
+
     @include breakpoints(tablet) {
       padding: 10px 0 25px;
       font-size: 12px;

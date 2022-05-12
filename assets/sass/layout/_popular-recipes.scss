@@ -3,7 +3,12 @@
 
 	& .wrapper {
 		padding-bottom: 71px;
-		border-bottom: 7px solid $secondary-color;
+    border-bottom: 7px solid $secondary-color;
+
+    @include breakpoints(tablet) {
+      & { padding-bottom: 33px;}
+    }
+
 	}
 
 	&__cards {

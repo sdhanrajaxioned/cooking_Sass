@@ -3,9 +3,7 @@
   &__cards {
     padding-top: 45px;
     
-    @include flex(normal, normal) {
-			flex-wrap: wrap;
-		}
+    @include flex(normal, normal) { flex-wrap: wrap; }
 
     @include breakpoints(ipad-mini){
       flex-direction: column;
@@ -55,6 +53,28 @@
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
+      }
+
+      &__figure {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          color: $white;
+          @include font_icons(30px) { 
+            content:"\f144";
+          }
+          cursor: pointer;
+        }
+
+        &:hover::after {
+            @include hover_effect(995px) {
+            color: $secondary-color;
+            @include transition-hover();
+          }
+        }
       }
     }
   }

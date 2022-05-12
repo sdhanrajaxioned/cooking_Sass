@@ -459,8 +459,17 @@ header .wrapper {
   text-align: center;
   white-space: nowrap;
 }
-.break {
-  display: block;
+@media only screen and (max-width: 768px) {
+  .banner__recipe-container__recipe-card__badge {
+    height: auto;
+    width: auto;
+    padding: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .break {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -515,10 +524,11 @@ header .wrapper {
 }
 @media only screen and (max-width: 768px) {
   .banner__social-links {
+    padding-bottom: 15px;
     position: unset;
   }
 }
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 480px) {
   .banner__social-links li:first-child {
     padding-bottom: 10px;
     display: block;
@@ -603,6 +613,11 @@ header .wrapper {
   padding-top: 52px;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .what-to-cook {
+    padding-top: 30px;
+  }
+}
 .what-to-cook .wrapper {
   border-bottom: 7px solid #000;
 }
@@ -641,6 +656,7 @@ header .wrapper {
 }
 
 .sams-suggestion {
+  position: relative;
   background-color: #f5f1ee;
 }
 .sams-suggestion .wrapper {
@@ -692,6 +708,29 @@ header .wrapper {
 
 .sams-suggestion .arrow-right {
   text-indent: -9999px;
+}
+@media only screen and (min-width: 995px) {
+  .sams-suggestion .arrow-right::after {
+    content: "\f105";
+    padding: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 48%;
+    right: 9%;
+    font-family: "fontAwesome";
+    font-size: 20px;
+    float: left;
+    text-indent: 0;
+  }
+}
+@media only screen and (min-width: 995px) {
+  .sams-suggestion .arrow-right:hover::after {
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
 }
 .recipe-card-info {
   padding: 10px 15px;
@@ -765,6 +804,11 @@ header .wrapper {
 .email-container {
   width: 245px;
 }
+@media only screen and (max-width: 480px) {
+  .email-container {
+    width: auto;
+  }
+}
 
 .email-field {
   width: 100%;
@@ -804,6 +848,11 @@ header .wrapper {
 .popular-recipes .wrapper {
   padding-bottom: 71px;
   border-bottom: 7px solid #000;
+}
+@media only screen and (max-width: 768px) {
+  .popular-recipes .wrapper {
+    padding-bottom: 33px;
+  }
 }
 .popular-recipes__cards {
   margin-top: 15px;
@@ -938,6 +987,29 @@ header .wrapper {
   letter-spacing: 1px;
 }
 
+.cooking-guide__cards__card__figure {
+  position: relative;
+}
+.cooking-guide__cards__card__figure::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 30px;
+  float: left;
+  text-indent: 0;
+  content: "\f144";
+  cursor: pointer;
+}
+@media only screen and (min-width: 995px) {
+  .cooking-guide__cards__card__figure:hover::after {
+    color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
+}
 .cooking-guide-cta {
   padding: 40px 0 50px;
   text-align: center;
@@ -957,9 +1029,9 @@ header .wrapper {
     text-align: center;
   }
 }
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 768px) {
   .footer__main {
-    text-align: center;
+    padding: 35px 0;
   }
 }
 .footer__main .wrapper {
@@ -1133,7 +1205,7 @@ header .wrapper {
 }
 
 .sign-up-btn {
-  padding: 0 12px;
+  padding: 10px 12px;
   margin-left: 16px;
   border: none;
   border-radius: 3px;

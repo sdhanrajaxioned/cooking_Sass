@@ -1,4 +1,5 @@
 .sams-suggestion {
+  position: relative;
   background-color: $bg-color;
 
   & .wrapper {
@@ -54,6 +55,28 @@
 
   .arrow-right {
     text-indent: -9999px;
+ 
+    &::after {
+      
+      @include hover_effect(995px) {
+        content: "\f105";
+        padding: 5px;
+        background-color: $white;
+        position: absolute;
+        top: 48%;
+        right: 9%;
+        @include font_icons(20px) {}
+
+      }
+
+    }
+    &:hover::after {
+      @include hover_effect(995px) {
+        background-color: $secondary-color;
+        color: $white;
+        @include transition-hover()
+      }
+    }
   }
 
   @at-root 
@@ -113,13 +136,18 @@
   &__newsletter-form {
     display: flex;
 
+    
     @include breakpoints(desktop-mini) {
-      & {padding-top: 15px;}
+      & { padding-top: 15px;}
     }
 
     @at-root
     .email-container {
       width: 245px;
+
+      @include breakpoints(mobile-small) {
+        & { width: auto;}
+      }
     }
     @at-root
     .email-field {

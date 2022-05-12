@@ -57,8 +57,22 @@
         text-align: center;
         white-space: nowrap;
 
+        @include breakpoints(tablet) {
+          & { 
+            height: auto;
+            width: auto;
+            padding: 8px;
+
+          }
+        }
+
         @at-root
-        .break { display: block;}
+        .break { 
+          @include hover_effect(768px){
+            display: block;
+          }
+        }
+
         @include breakpoints(tablet) {
           & {
           right: 50%;
@@ -114,15 +128,19 @@
       }
     }
   }
+
   &__social-links {
     position: absolute;
     bottom: 15px;
     left: 15px;
     @include breakpoints(tablet) {
-      position: unset;
+     & { 
+       padding-bottom: 15px;
+       position: unset; 
+      }
     }
 
-    @include breakpoints(ipad-mini) {
+    @include breakpoints(mobile-small) {
       & li:first-child{
         padding-bottom: 10px;
         display: block;

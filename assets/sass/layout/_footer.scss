@@ -1,13 +1,14 @@
 .footer__main {
+  padding: 40px 0 50px;
+  background-color: #e5e7e2;
+
   @include breakpoints(ipad-mini) {
     & { text-align: center; }
   }
 
-  @include breakpoints(ipad-mini) {
-    & { text-align:  center; }
+  @include breakpoints(tablet) {
+    & { padding: 35px 0 }
   }
-  padding: 40px 0 50px;
-  background-color: #e5e7e2;
 
   .wrapper {
     @include flex(space-between, normal);
@@ -15,8 +16,8 @@
       & { flex-direction: column; }
     }
   }
-  &__newsletter {
 
+  &__newsletter {
     @at-root
     .newsletter-heading {
       font-size: 21px;
