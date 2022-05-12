@@ -287,6 +287,7 @@ header .wrapper {
 @media only screen and (max-width: 540px) {
   .logo {
     border-right: none;
+    flex-basis: 50%;
   }
 }
 
@@ -308,13 +309,21 @@ header .wrapper {
 }
 @media only screen and (max-width: 540px) {
   .search-form {
+    padding-left: 0;
+    margin: 0 auto;
+    flex-basis: auto;
     order: 3;
-    flex-grow: 1;
   }
 }
 
 .search-container {
   flex-grow: 1;
+}
+@media only screen and (max-width: 540px) {
+  .search-container {
+    width: 200px;
+    flex-grow: initial;
+  }
 }
 
 #search-field {
@@ -356,7 +365,8 @@ header .wrapper {
 @media only screen and (max-width: 540px) {
   .search-btn::before {
     bottom: 9px;
-    left: 36px;
+    left: 0;
+    transform: translateX(-25%);
   }
 }
 
