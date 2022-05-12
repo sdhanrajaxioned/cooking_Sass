@@ -110,6 +110,17 @@ li {
   font-weight: 300;
 }
 
+//body overflow hidden hamburger menu open
+.hidden {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .navbar {
   a.color-primary { color: $primary-color ;}
 }

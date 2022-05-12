@@ -17,7 +17,6 @@
   }
 }
 
-
 .btn-primary {
   padding: 10px 12px;
   margin-top: 15px;
@@ -102,9 +101,10 @@
 .hamburger { 
   display: none; 
 
-  &:hover + .navbar {
-    display: block;
-  }
+  &.active { display: block; }
+  &.active .bar:nth-child(2) { opacity: 0;}
+  &.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);}
+  &.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
 
   @include breakpoints(desktop-mini) {
     & { 
