@@ -11,6 +11,7 @@
 @mixin hover_effect($width){
   @media only screen and (min-width: $width) {
     @content;
+    @include transition-hover()
   }
 }
 
