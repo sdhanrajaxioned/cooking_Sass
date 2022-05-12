@@ -712,13 +712,14 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .sams-suggestion .arrow-right::after {
     content: "\f105";
-    padding: 5px;
-    background-color: #fff;
+    padding: 5px 10px 5px 5px;
     position: absolute;
-    top: 48%;
-    right: 9%;
+    top: 45%;
+    right: 8%;
+    background-color: #fff;
+    color: #acaaad;
     font-family: "fontAwesome";
-    font-size: 20px;
+    font-size: 30px;
     float: left;
     text-indent: 0;
   }
@@ -926,6 +927,7 @@ header .wrapper {
 }
 
 .cooking-guide {
+  position: relative;
   background-color: #f5f1ee;
 }
 .cooking-guide__cards {
@@ -1017,6 +1019,37 @@ header .wrapper {
 @media only screen and (max-width: 995px) {
   .cooking-guide-cta {
     padding: 10px 0 25px;
+  }
+}
+
+.cooking-guide__arrow-left {
+  display: none;
+}
+.cooking-guide__arrow-right {
+  text-indent: -9999px;
+}
+@media only screen and (min-width: 995px) {
+  .cooking-guide__arrow-right::after {
+    content: "\f105";
+    padding: 5px 10px 5px 5px;
+    position: absolute;
+    top: 43.7%;
+    right: 8%;
+    background-color: #fff;
+    color: #acaaad;
+    font-family: "fontAwesome";
+    font-size: 30px;
+    float: left;
+    text-indent: 0;
+  }
+}
+@media only screen and (min-width: 995px) {
+  .cooking-guide__arrow-right:hover::after {
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 

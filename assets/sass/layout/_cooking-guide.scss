@@ -1,4 +1,5 @@
 .cooking-guide {
+  position: relative;
   background-color: $bg-color;
   &__cards {
     padding-top: 45px;
@@ -86,6 +87,35 @@
 
     @include breakpoints(ipad-mini) {
       & { padding: 10px 0 25px; }
+    }
+  }
+
+  &__arrow-left { display: none; }
+
+  &__arrow-right { 
+    text-indent: $indent;
+
+    &::after {
+      
+      @include hover_effect(995px) {
+        content: "\f105";
+        padding:  5px 10px 5px 5px;
+        position: absolute;
+        top: 43.7%;
+        right: 8%;
+        background-color: $white;
+        color: $download-btn-color;
+        @include font_icons(30px)
+
+      }
+
+    }
+    &:hover::after {
+      @include hover_effect(995px) {
+        background-color: $secondary-color;
+        color: $white;
+        @include transition-hover()
+      }
     }
   }
 }
