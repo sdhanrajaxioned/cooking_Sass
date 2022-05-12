@@ -298,6 +298,11 @@ header .wrapper {
 }
 @media only screen and (max-width: 1280px) {
   .search-form {
+    flex-basis: 28%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .search-form {
     flex-basis: 70%;
   }
 }
@@ -359,15 +364,17 @@ header .wrapper {
   display: none;
 }
 
-.navbar {
-  margin-left: auto;
+.navbar.active .navbar__links {
+  left: 0;
 }
-.navbar.active {
-  display: block;
-}
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .navbar {
-    display: none;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
+  .navbar {
+    margin-left: auto;
   }
 }
 .navbar__links {
@@ -377,14 +384,24 @@ header .wrapper {
   .navbar__links {
     width: 100%;
     min-height: 100vh;
+    max-height: calc(100% - 50px);
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 66px;
+    left: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #000;
     text-align: center;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .navbar__links {
+    top: 99px;
   }
 }
 .navbar li {
@@ -397,6 +414,12 @@ header .wrapper {
     margin: 27px 17px 0px 0px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .navbar li {
+    padding: 30px 0;
+    margin: 0;
+  }
+}
 .navbar .recipe-box {
   padding: 15px 20px;
   margin-top: 10px;
@@ -404,9 +427,14 @@ header .wrapper {
   border-bottom: 0px;
   text-align: center;
 }
-.navbar .recipe-box:hover {
-  background-color: #eee;
-  cursor: pointer;
+@media only screen and (min-width: 1024px) {
+  .navbar .recipe-box:hover {
+    cursor: pointer;
+    background-color: #eee;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
 }
 .navbar .log-in {
   display: block;
@@ -1451,6 +1479,7 @@ header .wrapper {
     margin-left: auto;
     display: block;
     flex-basis: 10%;
+    cursor: pointer;
   }
 }
 
