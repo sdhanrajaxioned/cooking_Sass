@@ -142,6 +142,9 @@ li {
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
@@ -152,6 +155,9 @@ li {
 @media only screen and (min-width: 995px) {
   .contact-us:hover {
     color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
@@ -193,6 +199,11 @@ li {
   color: #000;
 }
 @media only screen and (min-width: 995px) {
+  .recipe-name a {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .recipe-name a:hover {
     color: #e33d26;
     -webkit-transition: 0.4s ease-in;
@@ -351,6 +362,9 @@ header .wrapper {
 .navbar {
   margin-left: auto;
 }
+.navbar.active {
+  display: block;
+}
 @media only screen and (max-width: 1024px) {
   .navbar {
     display: none;
@@ -411,11 +425,13 @@ header .wrapper {
   }
 }
 @media only screen and (min-width: 995px) {
-  .navbar a:hover {
-    color: #000;
+  .navbar a {
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
+  }
+  .navbar a:hover {
+    color: #000;
   }
 }
 
@@ -494,6 +510,9 @@ header .wrapper {
 @media only screen and (min-width: 768px) {
   .break {
     display: block;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
@@ -518,6 +537,9 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .recipe-card__heading a:hover {
     color: #e33d26;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
@@ -747,12 +769,18 @@ header .wrapper {
     font-size: 30px;
     float: left;
     text-indent: 0;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 @media only screen and (min-width: 995px) {
   .sams-suggestion .arrow-right:hover::after {
     background-color: #000;
     color: #fff;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 .recipe-card-info {
@@ -780,6 +808,11 @@ header .wrapper {
   text-indent: -9999px;
 }
 @media only screen and (min-width: 995px) {
+  .bookmark-icons {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .bookmark-icons:hover {
     color: #000;
   }
@@ -856,6 +889,9 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .sams-suggestion .newsletter-grey-txt a:hover {
     color: #000;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
@@ -1060,12 +1096,18 @@ header .wrapper {
     font-size: 30px;
     float: left;
     text-indent: 0;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 @media only screen and (min-width: 995px) {
   .cooking-guide__arrow-right:hover::after {
     background-color: #000;
     color: #fff;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
@@ -1155,6 +1197,9 @@ header .wrapper {
   .footer-icon:hover {
     color: #fff;
     background-color: #5b575c;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 .footer-icon::after {
@@ -1240,6 +1285,11 @@ header .wrapper {
   border-right: none;
 }
 @media only screen and (min-width: 995px) {
+  .footer-end__left__links a, .footer-end__right__links a {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .footer-end__left__links a:hover, .footer-end__right__links a:hover {
     color: #e33d26;
   }
@@ -1271,6 +1321,11 @@ header .wrapper {
   white-space: nowrap;
 }
 @media only screen and (min-width: 995px) {
+  .sign-up-btn {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .sign-up-btn:hover {
     background-color: #000;
     color: #fff;
@@ -1299,6 +1354,11 @@ header .wrapper {
   padding-right: 9px;
 }
 @media only screen and (min-width: 995px) {
+  .btn-primary {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .btn-primary:hover {
     background-color: #000;
     color: #e33d26;
@@ -1330,6 +1390,9 @@ header .wrapper {
     -webkit-transition: 0.4s ease-in;
     -o-transition: 0.4s ease-in;
     transition: 0.4s ease-in;
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
   }
 }
 
@@ -1344,6 +1407,11 @@ header .wrapper {
   text-align: center;
 }
 @media only screen and (min-width: 995px) {
+  .download-btn {
+    -webkit-transition: 0.4s ease-in;
+    -o-transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+  }
   .download-btn:hover {
     background-color: #000;
     -webkit-transition: 0.4s ease-in;

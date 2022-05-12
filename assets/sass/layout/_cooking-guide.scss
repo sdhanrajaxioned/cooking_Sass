@@ -76,7 +76,6 @@
         &:hover::after {
             @include hover_effect(995px) {
             color: $secondary-color;
-            @include transition-hover();
           }
         }
       }
