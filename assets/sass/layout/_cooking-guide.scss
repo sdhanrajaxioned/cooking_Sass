@@ -1,12 +1,15 @@
 .cooking-guide {
   position: relative;
   background-color: $bg-color;
+  text-align: center;
+
   &__cards {
     padding-top: 45px;
     
     @include flex(normal, normal) { flex-wrap: wrap; }
 
     @include breakpoints(ipad-mini){
+      padding-top: 10px;
       flex-direction: column;
       align-items: center;
     }

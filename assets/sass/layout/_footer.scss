@@ -52,12 +52,17 @@
   }
 
   &__social-links {
+    margin-left: 2%;
     &__links {
+      display: flex;
       padding-bottom: 22px;
       border-bottom: 1px solid $download-btn-color;
 
       @include breakpoints(ipad-mini) {
-        & { padding-top: 22px;}
+        & { 
+          padding-top: 22px;
+          justify-content: center;
+        }
       }
       @at-root
       .footer-icon { 
@@ -73,7 +78,6 @@
           @include hover_effect(995px) {
             color: $white;
             background-color: $social-icon-color;
-            @include transition-hover();
           }
         }
         
@@ -159,7 +163,6 @@
         @include hover_effect(995px) {
           &:hover {
             color: $primary-color;
-            @include transition-hover();
           }
         }
 
@@ -172,5 +175,12 @@
         }
       }
     }
+  }
+
+  @at-root 
+  .copyright {
+    padding: 0 18px;
+    color: $white;
+    font-size: 13px;
   }
 }

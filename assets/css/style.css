@@ -124,7 +124,7 @@ li {
 
 .section-heading-subtxt {
   color: #999;
-  font-size: 27.5px;
+  font-size: 27px;
 }
 
 .heading-txt {
@@ -214,6 +214,26 @@ li {
 
 .navbar a.color-primary {
   color: #e33d26;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: red;
+}
+
+input:focus::-moz-placeholder {
+  color: red;
+}
+
+input:focus:-ms-input-placeholder {
+  color: red;
+}
+
+input:focus::-ms-input-placeholder {
+  color: red;
+}
+
+input:focus::placeholder {
+  color: red;
 }
 
 .wrapper {
@@ -438,11 +458,6 @@ header .wrapper {
     max-width: none;
   }
 }
-@media only screen and (max-width: 995px) {
-  .banner__recipe-container__recipe-card {
-    padding: 61px 0 10px;
-  }
-}
 .banner__recipe-container__recipe-card__badge {
   width: 108px;
   height: 108px;
@@ -493,9 +508,6 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .recipe-card__heading a:hover {
     color: #e33d26;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 
@@ -608,6 +620,7 @@ header .wrapper {
 
 .what-to-cook {
   background-color: #f5f1ee;
+  text-align: center;
 }
 .what-to-cook {
   padding-top: 52px;
@@ -658,6 +671,7 @@ header .wrapper {
 .sams-suggestion {
   position: relative;
   background-color: #f5f1ee;
+  text-align: center;
 }
 .sams-suggestion .wrapper {
   border-bottom: 7px solid #000;
@@ -670,6 +684,7 @@ header .wrapper {
 }
 @media only screen and (max-width: 995px) {
   .sams-suggestion__recipe-cards {
+    padding-top: 20px;
     flex-direction: column;
     align-items: center;
   }
@@ -728,9 +743,6 @@ header .wrapper {
   .sams-suggestion .arrow-right:hover::after {
     background-color: #000;
     color: #fff;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 .recipe-card-info {
@@ -760,9 +772,6 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .bookmark-icons:hover {
     color: #000;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 .bookmark-icons::after {
@@ -837,14 +846,12 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .sams-suggestion .newsletter-grey-txt a:hover {
     color: #000;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 
 .popular-recipes {
   background-color: #f5f1ee;
+  text-align: center;
 }
 .popular-recipes .wrapper {
   padding-bottom: 71px;
@@ -929,6 +936,7 @@ header .wrapper {
 .cooking-guide {
   position: relative;
   background-color: #f5f1ee;
+  text-align: center;
 }
 .cooking-guide__cards {
   padding-top: 45px;
@@ -941,6 +949,7 @@ header .wrapper {
 }
 @media only screen and (max-width: 995px) {
   .cooking-guide__cards {
+    padding-top: 10px;
     flex-direction: column;
     align-items: center;
   }
@@ -1109,13 +1118,18 @@ header .wrapper {
   border: 1px solid #ccc;
 }
 
+.footer__main__social-links {
+  margin-left: 2%;
+}
 .footer__main__social-links__links {
+  display: flex;
   padding-bottom: 22px;
   border-bottom: 1px solid #acaaad;
 }
 @media only screen and (max-width: 995px) {
   .footer__main__social-links__links {
     padding-top: 22px;
+    justify-content: center;
   }
 }
 .footer-icon {
@@ -1131,9 +1145,6 @@ header .wrapper {
   .footer-icon:hover {
     color: #fff;
     background-color: #5b575c;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 .footer-icon::after {
@@ -1221,9 +1232,6 @@ header .wrapper {
 @media only screen and (min-width: 995px) {
   .footer-end__left__links a:hover, .footer-end__right__links a:hover {
     color: #e33d26;
-    -webkit-transition: 0.4s ease-in;
-    -o-transition: 0.4s ease-in;
-    transition: 0.4s ease-in;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -1235,6 +1243,11 @@ header .wrapper {
   .footer-end__left__links a, .footer-end__right__links a {
     border-right: none;
   }
+}
+.copyright {
+  padding: 0 18px;
+  color: #fff;
+  font-size: 13px;
 }
 
 .sign-up-btn {

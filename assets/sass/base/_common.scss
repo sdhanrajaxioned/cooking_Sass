@@ -113,6 +113,13 @@ li {
 .navbar {
   a.color-primary { color: $primary-color ;}
 }
+
+input:focus::-webkit-input-placeholder { color: red; }
+input:focus::-moz-placeholder { color: red; }
+input:focus:-ms-input-placeholder { color: red; }
+input:focus::-ms-input-placeholder { color: red; }
+input:focus::placeholder { color: red; }
+
 // for wrapper
 .wrapper {
 	max-width: 1360px;
