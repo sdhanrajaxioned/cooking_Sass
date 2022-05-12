@@ -1,7 +1,9 @@
 .cooking-guide {
   position: relative;
   background-color: $bg-color;
-  text-align: center;
+  
+  @include breakpoints(ipad-mini) { text-align: center; }
+
 
   &__cards {
     padding-top: 45px;
