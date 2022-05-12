@@ -32,9 +32,82 @@ li {
 
 // common styling
 .section-heading { font-size: $heading-txt-size; }
+
 .section-heading-subtxt { 
   color: $text-color;
   font-size: $heading-subtxt-size; 
+}
+
+.heading-txt { 
+  padding: 15px 0 5px;
+  font-size: 24px;
+
+  & a {
+    color: $secondary-color;
+  }
+
+  & a:hover {
+    color: $primary-color;
+    @include hover_effect(995px){
+      @include transition-hover();
+    }
+  }
+}
+
+.contact-us {
+  color: #666;
+  text-decoration: underline;
+  &:hover {
+    @include hover_effect(995px) {
+      color: $secondary-color;
+      @include transition-hover()
+    }
+  }
+}
+
+.heading-subtxt { 
+  color: $grey-subtxt;
+  font-size: 24px;
+
+  @include breakpoints(ipad-mini){
+    & { font-size: 20px;}
+  }
+  @include breakpoints(tablet){
+    & { font-size: 18px;}
+  }
+  @include breakpoints(mobile){
+    & { font-size: 16px;}
+  }
+  @include breakpoints(mobile-small){
+    & { font-size: 15px;}
+  }
+}
+
+.recipe-name {
+  padding-bottom: 3px;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.1;
+  & a {
+    color: $secondary-color;
+    @include hover_effect(995px){
+      &:hover {
+        color: $primary-color;
+        @include transition-hover();
+      }
+    }
+  }
+}
+
+.chef {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.time {
+  color: #767676;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .navbar {

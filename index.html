@@ -21,9 +21,13 @@
             			<button class="search-btn">Search</button>
 						<div class="search-container">
 							<input type="search" name="search" class="search-field" id="search-field" placeholder="What would you like to cook?">
-							<span class="error-msg">error-msg</span>
 						</div>
 					</form>
+					<div class="hamburger">
+						<span class="bar">bar</span>
+						<span class="bar">bar</span>
+						<span class="bar">bar</span>
+					  </div>
 					<nav class="navbar">
 						<ul class="navbar__links">
 							<li><a href="#FIXME" title="WHAT TO COOK THIS WEEK">WHAT TO COOK THIS WEEK</a></li>
@@ -99,7 +103,7 @@
 									</div>
 									<div class="card-bookmark">
 										<span class="time">3 hours</span>
-										<a href="#FIXME" title="bookmark" class="bookmark-icon">bookmark</a>
+										<a href="#FIXME" title="bookmark" class="bookmark-icons">bookmark</a>
 									</div>
 								</div>
 							</li>
@@ -107,14 +111,14 @@
 								<figure class="sams-recipe-card-figure">
 									<img src="https://via.placeholder.com/229x155/EB4034" alt="Baked ziti photo">
 								</figure>
-								<div class="sams-recipe-card-info">
+								<div class="recipe-card-info">
 									<div class="card-data">
 										<h5 class="recipe-name"><a href="#FIXME" title="Baked Ziti">Baked Ziti</a></h5>
 										<p class="chef">By Alison Roman</p>
 									</div>
 									<div class="card-bookmark">
 										<span class="time">1 1/2 hours</span>
-										<a href="#FIXME" title="bookmark" class="bookmark-icon">bookmark</a>
+										<a href="#FIXME" title="bookmark" class="bookmark-icons">bookmark</a>
 									</div>
 								</div>
 							</li>
@@ -122,14 +126,14 @@
 								<figure class="sams-recipe-card-figure">
 									<img src="https://via.placeholder.com/229x155/34EBBD" alt="Cider-spiked fish photo">
 								</figure>
-								<div class="sams-recipe-card-info">
+								<div class="recipe-card-info">
 									<div class="card-data">
 										<h5 class="recipe-name"><a href="#FIXME" title="Cider-Spiked Fish">Cider-Spiked Fish</a></h5>
 										<p class="chef">By Tejal Rao</p>
 									</div>
 									<div class="card-bookmark">
 										<span class="time">1 hour</span>
-										<a href="#FIXME" title="bookmark" class="bookmark-icon">bookmark</a>
+										<a href="#FIXME" title="bookmark" class="bookmark-icons">bookmark</a>
 									</div>
 								</div>
 							</li>
@@ -137,14 +141,14 @@
 								<figure class="sams-recipe-card-figure">
 									<img src="https://via.placeholder.com/229x155/C034EB" alt="Sourdough pancake or waffle batter photo">
 								</figure>
-								<div class="sams-recipe-card-info">
+								<div class="recipe-card-info">
 									<div class="card-data">
 										<h5 class="recipe-name"><a href="#FIXME" title="Sourdough Pancake or Waffle Batter">Sourdough Pancake or Waffle Batter</a></h5>
 										<p class="chef">By Sam Sifton</p>
 									</div>
 									<div class="card-bookmark">
 										<span class="time">15 minutes plus overnight rest</span>
-										<a href="#FIXME" title="bookmark" class="bookmark-icon">bookmark</a>
+										<a href="#FIXME" title="bookmark" class="bookmark-icons">bookmark</a>
 									</div>
 								</div>
 							</li>
@@ -152,14 +156,14 @@
 								<figure class="sams-recipe-card-figure">
 									<img src="https://via.placeholder.com/229x155/0000FF" alt="sausage and cabbage photo">
 								</figure>
-								<div class="sams-recipe-card-info">
+								<div class="recipe-card-info">
 									<div class="card-data">
 										<h5 class="recipe-name"><a href="FIXME" title="Sausage and Cabbage" >Sausage and Cabbage</a></h5>
 										<p class="chef">By Julia Moskin</p>
 									</div>
 									<div class="card-bookmark">
 										<span class="time">3 hours</span>
-										<a href="#FIXME" title="bookmark" class="bookmark-icon">bookmark</a>
+										<a href="#FIXME" title="bookmark" class="bookmark-icons">bookmark</a>
 									</div>
 								</div>
 							</li>
@@ -170,14 +174,13 @@
 							<div class="sams-suggestion__newsletter-txt">
 								<span class="newsletter-bold-txt">Get recipes, tips and NYT special offers delivered to your inbox.</span>
 								<span class="newsletter-grey-txt">Opt out or 
-									<a href="#FIXME" title="Contact Us">contact us</a>
+									<a href="#FIXME" class="contact-us" title="Contact Us">contact us</a>
 									anytime
 								</span>
 							</div>
 							<form method="GET" class="sams-suggestion__newsletter-form">
 								<div class="email-container">
-									<input type="email" name="email" class="email-field" id="sams-email-field">
-									<span class="error-msg"></span>
+									<input type="email" name="email" class="email-field" id="sams-email-field" placeholder="Your Email">
 								</div>
 								<button class="sign-up-btn">Sign Up</button>
 							</form>
@@ -196,7 +199,16 @@
 								<figure class="recipe-card-figure">
 									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
 								</figure>
-								<div class="recipe-card-content">
+								<div class="popular-recipe-card-content">
+									<h5 class="popular-recipe-card-heading">Our 15 Most Popular Breakfast Recipes</h5>
+									<a href="#FIXME" class="btn-primary">Save All 15 Recipes</a>
+								</div>
+							</li>
+							<li class="popular-recipes__cards__card">
+								<figure class="recipe-card-figure">
+									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
+								</figure>
+								<div class="popular-recipe-card-content">
 									<h5 class="popular-recipe-card-heading">22 Filling Vegetarian Salads That  Are Standalone Meals</h5>
 									<a href="#FIXME" title="Save All 22 Recipes" class="btn-primary">Save All 22 Recipes</a>
 								</div>
@@ -205,7 +217,7 @@
 								<figure class="recipe-card-figure">
 									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
 								</figure>
-								<div class="recipe-card-content">
+								<div class="popular-recipe-card-content">
 									<h5 class="popular-recipe-card-heading">Classic Dishes You Should Master(If You Haven't Already)</h5>
 									<a href="#FIXME" title="Save All 48 Recipes" class="btn-primary">Save All 48 Recipes</a>
 								</div>
@@ -214,8 +226,8 @@
 								<figure class="recipe-card-figure">
 									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
 								</figure>
-								<div class="recipe-card-content">
-									<h5 class="recipe-card-content__card-heading">Vegetarian Comfort Food</h5>
+								<div class="popular-recipe-card-content">
+									<h5 class="popular-recipe-card-heading">Vegetarian Comfort Food</h5>
 									<a href="#FIXME" title="Save All 15 Recipes" class="btn-primary">Save All 15 Recipes</a>
 								</div>
 							</li>
@@ -223,8 +235,8 @@
 								<figure class="recipe-card-figure">
 									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
 								</figure>
-								<div class="recipe-card-content">
-									<h5 class="recipe-card-content__card-heading">20 Staff Favourites Ready in Under an Hour</h5>
+								<div class="popular-recipe-card-content">
+									<h5 class="popular-recipe-card-heading">20 Staff Favourites Ready in Under an Hour</h5>
 									<a href="#FIXME" title="Save All 20 Recipes" class="btn-primary">Save All 20 Recipes</a>
 								</div>
 							</li>
@@ -232,18 +244,9 @@
 								<figure class="recipe-card-figure">
 									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
 								</figure>
-								<div class="recipe-card-content">
-									<h5 class="recipe-card-content__card-heading">18 Chicken Recipes From Around the World</h5>
+								<div class="popular-recipe-card-content">
+									<h5 class="popular-recipe-card-heading">18 Chicken Recipes From Around the World</h5>
 									<a href="#FIXME" title="Save All 18 Recipes" class="btn-primary">Save All 18 Recipes</a>
-								</div>
-							</li>
-							<li class="popular-recipes__cards__card">
-								<figure class="recipe-card-figure">
-									<img src="https://via.placeholder.com/480x320/EB4034" alt="Breakfast recipe photo">
-								</figure>
-								<div class="recipe-card-content">
-									<h5 class="recipe-card-content__card-heading">Our 15 Most Popular Breakfast Recipes</h5>
-									<a href="#FIXME" class="btn-primary">Save All 15 Recipes</a>
 								</div>
 							</li>
 						</ul>
@@ -323,27 +326,26 @@
             <!--main section end-->
             <!--footer section start-->
             <footer>      
-				<div class="footer-main">
+				<div class="footer__main">
 					<div class="wrapper">
-						<div class="footer-main__newsletter">
-							<h4 class="footer-main__newsletter__heading heading-txt">GET OUR NEWSLETTER</h4>
-							<p class="footer-main__newsletter__heading-subtxt heading-subtxt">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a href="#FIXME" class="contact-us" title="contact us">contact us</a>anytime.</p>
-							<form method="GET" class="footer-main__newsletter__newsletter-form">
+						<div class="footer__main__newsletter">
+							<h4 class="newsletter-heading">GET OUR NEWSLETTER</h4>
+							<span class="newsletter-subtxt">Get recipes, tips and NYT special offers delivered straight to your inbox. Opt out or <a href="#FIXME" class="contact-us" title="contact us">contact us</a>anytime.</span>
+							<form method="GET" class="footer__main__newsletter__newsletter-form">
 								<div class="newsletter-email-container">
-									<input type="email" name="email" class="email-field" id="newsletter-email-field">
-									<span class="error-msg"></span>
+									<input type="email" name="email" class="email-field" id="newsletter-email-field" placeholder="Add Your Email">
 								</div>
 								<button class="sign-up-btn">Sign Up</button>
 							</form>
 						</div>
-						<div class="footer-main__social-links">
-							<ul class="footer-main__social-links__links">
-								<li><a href="#FIXME" title="Pintrest" target="_blank"></a></li>
-								<li><a href="#FIXME" title="Facebook" target="_blank"></a></li>
-								<li><a href="#FIXME" title="Twitter" target="_blank"></a></li>
+						<div class="footer__main__social-links">
+							<ul class="footer__main__social-links__links">
+								<li><a href="#FIXME" class="pintrest footer-icon" title="Pintrest" target="_blank">Pintrest</a></li>
+								<li><a href="#FIXME" class="facebook footer-icon" title="Facebook" target="_blank">Facebook</a></li>
+								<li><a href="#FIXME" class="twitter footer-icon" title="Twitter" target="_blank">Twitter</a></li>
 							</ul>
-							<div class="footer-main__social-links__btn-container">
-								<a href="#FIXME" class="download-btn" target="_blank" title="Download on the AppStore">Download on the AppStore</a>
+							<div class="footer__main__social-links__btn-container">
+								<a href="#FIXME" class="download-btn" target="_blank" title="Download on the AppStore">Download on the <span class="large-txt">AppStore</span></a>
 							</div>
 						</div>
 					</div>
@@ -355,14 +357,14 @@
 								<li><a href="#FIXME" title="NYTimes.com">NYTimes.com</a></li>
 								<li><a href="#FIXME" title="NYTimes.com/Food">NYTimes.com/Food</a></li>
 								<li><a href="#FIXME" title="FAQ">FAQ</a></li>
-								<li><a href="#FIXME" title="Send Us Feedback" class="bold-link">Send Us Feedback</a></li>
+								<li><a href="#FIXME" title="Send Us Feedback" class="bold-link border-none">Send Us Feedback</a></li>
 							</ul>
 						</div>
 						<div class="footer-end__right">
 							<ul class="footer-end__right__links">
 								<li><a href="#FIXME" title="Privacy Policy">Privacy Policy</a></li>
 								<li><a href="#FIXME" title="Terms Of Service">Terms Of Service</a></li>
-								<li><a href="#FIXME" title="The New York Times Company">&copy; The New York Times Company</a></li>
+								<li><a href="#FIXME" class="border-none" title="The New York Times Company">&copy; The New York Times Company</a></li>
 							</ul>
 						</div>
 					</div>

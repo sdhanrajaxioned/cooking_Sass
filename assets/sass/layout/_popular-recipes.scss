@@ -1,0 +1,85 @@
+.popular-recipes {
+	background-color: $bg-color;
+
+	& .wrapper {
+		padding-bottom: 71px;
+    border-bottom: 7px solid $secondary-color;
+
+    @include breakpoints(tablet) {
+      & { padding-bottom: 33px;}
+    }
+
+	}
+
+	&__cards {
+		margin-top: 15px;
+
+		@include flex(normal, normal) {
+			flex-wrap: wrap;
+		}
+
+		@include breakpoints(ipad-mini) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__card {
+			margin: 0 2.1% 32px 0;
+			flex-basis: 48.9%;
+
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+
+			@include breakpoints(ipad-mini) {
+				& {
+					width: 80%;
+					margin-right: 0;
+				}
+			}
+
+			@at-root .popular-recipe-card-content {
+				height: 161px;
+				padding: 30px 40px;
+				border: 1px solid #ccc;
+				background-color: $white;
+
+				@include flex(center, center) {
+					flex-direction: column;
+				}
+
+				@include breakpoints(ipad-mini) {
+					&{
+						padding: 15px 20px;
+						text-align: center;
+					}
+				}
+
+				@include breakpoints(tablet) {
+					& {	padding: 10px 15px; }
+				}
+			}
+		}
+	}
+
+	@at-root .popular-recipe-card-heading {
+		font-size: 24px;
+
+		@include breakpoints(ipad-mini) {
+			& {
+				font-size: 20px;
+			}
+		}
+
+		@include breakpoints(tablet) {
+			& {
+				font-size: 18px;
+			}
+		}
+	}
+
+	@at-root .editors-collection-cta {
+		text-align: center;
+	}
+}

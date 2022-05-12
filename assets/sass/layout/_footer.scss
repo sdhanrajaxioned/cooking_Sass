@@ -1,0 +1,176 @@
+.footer__main {
+  padding: 40px 0 50px;
+  background-color: #e5e7e2;
+
+  @include breakpoints(ipad-mini) {
+    & { text-align: center; }
+  }
+
+  @include breakpoints(tablet) {
+    & { padding: 35px 0 }
+  }
+
+  .wrapper {
+    @include flex(space-between, normal);
+    @include breakpoints(ipad-mini) {
+      & { flex-direction: column; }
+    }
+  }
+
+  &__newsletter {
+    @at-root
+    .newsletter-heading {
+      font-size: 21px;
+      font-weight: 300;
+    }
+
+    @at-root 
+    .newsletter-subtxt {
+      display: block;
+      padding: 15px 0 28px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    &__newsletter-form { 
+      display: flex;
+      @include breakpoints(ipad-mini) {
+        justify-content: center;
+      }
+    }
+    
+  }
+  @at-root
+  .newsletter-email-container { 
+    width: 250px;
+  }
+  @at-root
+  .email-field {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+  }
+
+  &__social-links {
+    &__links {
+      padding-bottom: 22px;
+      border-bottom: 1px solid $download-btn-color;
+
+      @include breakpoints(ipad-mini) {
+        & { padding-top: 22px;}
+      }
+      @at-root
+      .footer-icon { 
+        width: 50px;
+        height: 50px;
+        margin: 0 6px;
+        border: 1px solid #ccc;
+        border-radius: 50%; 
+        color: $social-icon-color;
+        text-indent: $indent; 
+
+        &:hover {
+          @include hover_effect(995px) {
+            color: $white;
+            background-color: $social-icon-color;
+            @include transition-hover();
+          }
+        }
+        
+        &::after {
+          width: 100%;
+          height: 100%;
+          padding-top: 13px;
+          text-align: center;
+          @include font_icons(22px)
+        }
+
+      }
+      @at-root
+      .pintrest::after { content: "\f231"; }
+      
+      @at-root
+      .facebook::after { content: "\f39e"; }
+
+      @at-root
+      .twitter::after { content: "\f099"; }
+    }
+  }
+
+  @at-root
+  .large-txt {
+    display: block;
+    color: $white;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.footer-end {
+  background-color: #272228;
+  padding: 20px 0; 
+  
+  @include breakpoints(desktop-mini) {
+    & { text-align: center; }
+  }
+  
+  & .wrapper { 
+    width: 96.3%;
+    @include flex(space-between, normal);
+
+    @include breakpoints(desktop-mini) {
+      & { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  }
+
+  &__right {
+    @include breakpoints(desktop-mini) {
+      & { padding-top: 10px;}
+    }
+  }
+  
+  &__left,
+  &__right{
+    @include breakpoints(desktop-mini){
+     & { width: 100%; }
+    }
+
+    &__links {
+      @include breakpoints(mobile-small) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        padding: 0 18px;
+        border-right: 1px solid $text-color;
+        color: $white;
+        font-size: 13px;
+
+        &.bold-link{ font-weight: 800;}
+
+        &.border-none { border-right: none;  }
+
+        @include hover_effect(995px) {
+          &:hover {
+            color: $primary-color;
+            @include transition-hover();
+          }
+        }
+
+        @include breakpoints(desktop) {
+          & { padding: 0 10px;}
+        }
+
+        @include breakpoints(mobile-small) {
+          & { border-right: none; }
+        }
+      }
+    }
+  }
+}

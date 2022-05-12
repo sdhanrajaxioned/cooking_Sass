@@ -1,0 +1,43 @@
+.what-to-cook {
+  background-color: $bg-color;
+  & {
+    padding-top: 52px;
+    text-align: center;
+  }
+
+  @include breakpoints(tablet) {
+    & { padding-top: 30px; }
+  }
+
+  & .wrapper { border-bottom: 7px solid $secondary-color; }
+
+  &__heading {
+    font-size: 42px;
+    font-weight: 900;
+
+    @include breakpoints(tablet) {
+     & { font-size: 30px; }
+    }
+
+    @include breakpoints(mobile-small) {
+     & { font-size: 20px; }
+    }
+  }
+
+  &__heading-subtxt {
+    padding-bottom: 52px;
+    font-size: 13px;
+    font-weight: 300;
+
+    @include breakpoints(tablet) {
+      padding: 10px 0 25px;
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    @include breakpoints(mobile-small) {
+      padding: 10px 0 16px;
+      font-size: 10px;
+      line-height: 1.3;
+    }
+  }
+}

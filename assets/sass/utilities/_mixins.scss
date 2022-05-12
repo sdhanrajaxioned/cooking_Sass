@@ -1,4 +1,6 @@
 @mixin flex($justify, $align) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: $justify;
   align-items: $align;
@@ -19,6 +21,7 @@
   font-size: $size;
   float: left;
   text-indent: 0;
+  @content;
 }
 
 @mixin icon-box() {
@@ -29,6 +32,8 @@
 }
 
 @mixin transition-hover() {
+  -webkit-transition: .4s ease-in;
+  -o-transition: .4s ease-in;
   transition: .4s ease-in;
 }
 

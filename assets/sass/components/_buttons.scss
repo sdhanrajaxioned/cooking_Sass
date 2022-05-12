@@ -1,0 +1,127 @@
+.sign-up-btn {
+  padding: 10px 12px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  background: $primary-color;
+  font-size: 14px;
+  white-space: nowrap;
+
+  @include hover_effect(995px) {
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+      @include transition-hover();
+    }
+  }
+}
+
+
+.btn-primary {
+  padding: 10px 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: $primary-color  ;
+  color: $white;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+  &:before {
+    @include font_icons(16px) {
+      content: "\f02e";
+      padding-right: 9px;
+    }
+  }
+
+  @include hover_effect(995px) {
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  @include breakpoints(ipad-mini) {
+    & { font-size: 10px; }
+  }
+}
+
+.btn-large {
+  padding: 12px 30px;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  color: $secondary-color;
+  font-size: 14px;
+
+  @include breakpoints(mobile-small) {
+    & {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+  }
+
+  &:hover {
+    @include hover_effect(995px) {
+      background-color: $secondary-color;
+      color: $white;
+      @include transition-hover
+    } 
+  }
+}
+
+.download-btn {
+  padding: 5px 10px 5px 40px;
+  margin-top: 13px;
+  border-radius: 5px;
+  position: relative;
+  background-color: $download-btn-color;
+  color: $white;
+  font-size: 10px;
+  text-align: center;
+  
+  @include hover_effect(995px) {
+    &:hover { 
+      background-color: $secondary-color; 
+      @include transition-hover
+    }  
+  }
+
+  &::before {
+    content: "\f179";
+    padding-right: 20px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    @include font_icons(28px)
+  }
+}
+
+//hamburger
+@at-root
+.hamburger { 
+  display: none; 
+
+  &:hover + .navbar {
+    display: block;
+  }
+
+  @include breakpoints(desktop-mini) {
+    & { 
+      margin-left: auto;
+      display: block; 
+      flex-basis: 10%;
+    }
+  }
+}
+
+@at-root
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  display: block;
+  background-color: $secondary-color;
+  text-indent: -9999px;
+  transition: all 0.3s ease-in-out;
+}

@@ -28,9 +28,9 @@
     }
 
     &__recipe-card {
-      position: relative;
       max-width: 320px;
       padding: 51px 32px 40px;
+      position: relative;
       background: $white;
 
       @include breakpoints(tablet) {
@@ -52,13 +52,27 @@
         transform: translate(50%, -50%);
         background-color: $primary-color;
         color: $white;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 900;
         text-align: center;
         white-space: nowrap;
 
+        @include breakpoints(tablet) {
+          & { 
+            height: auto;
+            width: auto;
+            padding: 8px;
+
+          }
+        }
+
         @at-root
-        .break { display: block;}
+        .break { 
+          @include hover_effect(768px){
+            display: block;
+          }
+        }
+
         @include breakpoints(tablet) {
           & {
           right: 50%;
@@ -114,15 +128,19 @@
       }
     }
   }
+
   &__social-links {
     position: absolute;
     bottom: 15px;
     left: 15px;
     @include breakpoints(tablet) {
-      position: unset;
+     & { 
+       padding-bottom: 15px;
+       position: unset; 
+      }
     }
 
-    @include breakpoints(ipad-mini) {
+    @include breakpoints(mobile-small) {
       & li:first-child{
         padding-bottom: 10px;
         display: block;
@@ -135,16 +153,16 @@
     &__link {
       @at-root
       .icons { 
+        background-color: $secondary-color;
         color: $white;
         text-indent: $indent; 
-        background-color: $secondary-color;
         &::before {
           @include font_icons(14px);
         }
 
         &:hover {
-          color: $secondary-color;
           background-color: $primary-color;
+          color: $secondary-color;
         }
       }
       
